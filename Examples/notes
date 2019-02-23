@@ -1,0 +1,3 @@
+To compile program the consists of multiple go files:
+ - edit the build to package
+ - select the directory that the go files are in.

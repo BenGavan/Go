@@ -1,0 +1,27 @@
+
+Users:
+UID
+Username
+Email
+Password
+Phone Number
+Registered
+
+Sessions:
+UID
+Session token
+Created
+Last used
+
+
+
+--- Graph ---
+User:
+UID
+Username
+Display name
+Profile image url
+Number of Followers
+Number Following
+Number of Posts
+Registered
