@@ -1,12 +1,14 @@
 package main
 
 import (
+	"crypto/sha256"
 	"encoding/json"
 	"fmt"
 	"github.com/johnnadratowski/golang-neo4j-bolt-driver/log"
 	"io/ioutil"
 	"math/rand"
 	"net/http"
+	"strings"
 	"time"
 )
 
@@ -181,12 +183,26 @@ func createUID() string {
 	return RandString(15)
 }
 
+func hashPassword(password string) (string, string) {
+	salt := RandString(8)
+	hash := hashPasswordWithSalt(password, salt)
+	return hash, salt
+}
+
+func hashPasswordWithSalt(password string, salt string) string {
+	passWithSalt := salt + password
+	h := sha256.New()
+	h.Write([]byte(passWithSalt))
+	hash := string(h.Sum(nil))
+	return hash
+}
+
 func printInfo(r *http.Request) {
 	fmt.Println(time.Now(), "|", r.URL.Path, "|", r.Method, "|")
 }
 
 func printSeparator() {
-	fmt.Println("-------------------")
+	fmt.Println(strings.Repeat("-", 20))
 }
 
 /*

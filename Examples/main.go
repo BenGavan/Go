@@ -11,6 +11,7 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"text/template"
 	"time"
 )
 
@@ -21,48 +22,54 @@ type User struct {
 
 func main() {
 	timeTest()
-
-	c := make(chan bool)
-	cValue := make(chan int)
-
-	go asyncCheck("test", c)
-	go asynValue(cValue)
-
-	asyncCheckResult := <- c
-	asyncValue := <- cValue
-
-	fmt.Println("AsyncCheckResult:", asyncCheckResult)
-	fmt.Println("asyncVaklue:", asyncValue)
-
 	//deleteFile("test.txt")
 	//testFilePath := "testing.txt"
 	//writeToFile(testFilePath, []byte("This now works"))
 	//readFile(testFilePath)
 	//createNode()
-	http.Handle("/static", http.FileServer(http.Dir("/static/")))
+	mux := http.NewServeMux()
+
 	fs := http.FileServer(http.Dir("static/"))
-	http.Handle("/static/", http.StripPrefix("/static/", fs))
+	mux.Handle("/static", http.FileServer(http.Dir("/static/")))
+	mux.Handle("/static/", http.StripPrefix("/static/", fs))
 
-	http.Handle("/favicon.ico", http.NotFoundHandler())
 
-	http.HandleFunc("/hi", sayHello)
-	http.HandleFunc("/", handleBase)
-	http.HandleFunc("/servehtml", handleServeHTMLFile)
-	http.HandleFunc("/serveimage", handleServeImage)
-	http.HandleFunc("/user", handleServeJSONfromStruct)
-	http.HandleFunc("/users", handleServeJSONArrayfromStruct)
-	http.HandleFunc("/createcookie", handleCreateCookie)
-	http.HandleFunc("/deletecookie", handleDeleteCookie)
-	http.HandleFunc("/readcookie", handleGetCookieValue)
-	http.HandleFunc("/basicform", handleBasicWebFormParse)
-	http.HandleFunc("/upload", ReceiveFile)
-	http.HandleFunc("/upload2", ReceiveMultiValueForm)
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	mux.Handle("/favicon.ico", http.NotFoundHandler())
+
+	mux.HandleFunc("/hi", sayHello)
+	mux.HandleFunc("/", handleBase)
+	mux.HandleFunc("/servehtml", handleServeHTMLFile)
+	mux.HandleFunc("/serveimage", handleServeImage)
+	mux.HandleFunc("/unsafetemplate", handleUnsafeTemplate)
+	mux.HandleFunc("/safetemplate", handleSafeTemplate)
+	mux.HandleFunc("/user", handleServeJSONfromStruct)
+	mux.HandleFunc("/users", handleServeJSONArrayfromStruct)
+	mux.HandleFunc("/createcookie", handleCreateCookie)
+	mux.HandleFunc("/deletecookie", handleDeleteCookie)
+	mux.HandleFunc("/readcookie", handleGetCookieValue)
+	mux.HandleFunc("/basicform", handleBasicWebFormParse)
+	mux.HandleFunc("/upload", ReceiveFile)
+	mux.HandleFunc("/upload2", ReceiveMultiValueForm)
+
+	mux.HandleFunc("/testasnc", handleTestAsync)
+
+	httpServer := http.Server{
+		Addr:    ":8080",
+		Handler: mux,
+	}
+
+	if err := httpServer.ListenAndServe(); err != nil {
 		panic(err)
 	}
 }
 
+//func registerRoutes(mux *http.ServeMux) {
+//	mux.Handle()
+//}
+
+
 func handleBase(w http.ResponseWriter, r *http.Request) {
+	printInfo(r)
 	if r.URL.Path != "/" {
 		fmt.Fprintln(w, "404: Page not found")
 		return
@@ -70,31 +77,103 @@ func handleBase(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 	case http.MethodGet:
 		fmt.Fprint(w, "Hi :)")
-		fmt.Println("GET")
 	}
 }
 
 func sayHello(w http.ResponseWriter, r *http.Request) {
+	printInfo(r)
 	message := r.URL.Path
 	message = strings.TrimPrefix(message, "/")
 	message = "Hello " + message
-	w.Write([]byte(message))
+	_, err := w.Write([]byte(message))
+	if err != nil {
+		handleError(err)
+	}
 }
 
 /*
-////////////////   ------ chan ------   ////////////////
- */
- func asyncCheck(testString string, out chan bool) {
- 	out <- true
- }
+////////////////   ------ chan / async ------   ////////////////
+*/
+func asyncCheck(testString string, out chan bool) {
+	out <- true
+}
 
- func asynValue(out chan int) {
- 	out <- 123
- }
+func asynValue(out chan int) {
+	out <- 123
+}
+
+func asyncString(inputString string, out chan string) {
+	out <- inputString
+}
+
+func handleTestAsync(w http.ResponseWriter, r *http.Request) {
+	a, b, c := asyncTesting()
+
+	aString := fmt.Sprint(a)
+	bString := string(b)
+
+	var outBytes [][]byte
+
+	outBytes = append(outBytes, []byte(aString))
+	outBytes = append(outBytes, []byte(bString))
+	outBytes = append(outBytes, []byte(c))
+
+	var flatOutBytes []byte
+
+	for i := 0; i < len(outBytes); i++ {
+		currentBytes := outBytes[i]
+		for j := 0; j < len(currentBytes); i++ {
+			flatOutBytes = append(flatOutBytes, currentBytes[j])
+		}
+	}
+
+	_, err := w.Write(flatOutBytes)
+	handleError(err)
+}
+
+func asyncTesting() (bool, int, string) {
+	c := make(chan bool)
+	cValue := make(chan int)
+	cStringValue := make(chan string)
+
+	go asyncCheck("test", c)
+	go asynValue(cValue)
+	go asyncString("This is the hard coded parameter string.", cStringValue)
+
+	asyncCheckResult := <-c
+	asyncValue := <-cValue
+	asyncStringValue := <-cStringValue
+
+	fmt.Println("AsyncCheckResult:", asyncCheckResult)
+	fmt.Println("asyncVaklue:", asyncValue)
+	fmt.Println("asyncString value", asyncStringValue)
+
+	close(c)
+	close(cValue)
+	close(cStringValue)
+
+	//return <-c, <-cValue, <-cStringValue
+	return asyncCheckResult, asyncValue, asyncStringValue
+}
+
+////////////////  ------ html/template ----- ////////////////
+func handleUnsafeTemplate(w http.ResponseWriter, r *http.Request) {
+	// The same as safe template; however, we are using temple from the Text package (text/template)
+	t, err := template.New("foo").Parse(`{{define "T"}}Hello, {{.}}!{{end}}`)
+	err = t.ExecuteTemplate(w, "T", "<script>alert('you have been pwned')</script>;")
+	handleError(err)
+}
+
+func handleSafeTemplate(w http.ResponseWriter, r *http.Request) {
+	// The same as unsafe template; however, we are using temple from the HTML package (html/template)
+	t, err := template.New("foo").Parse(`{{define "T"}}Hello, {{.}}!{{end}}`)
+	err = t.ExecuteTemplate(w, "T", "<script>alert('you have been pwned')</script>;")
+	handleError(err)
+}
 
 /*
 ////////////////  ------  Files  ------  ////////////////
- */
+*/
 ///// Serve file
 func handleServeHTMLFile(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "index.html")
@@ -225,7 +304,7 @@ func fileDoesNotExist(path string) bool {
 
 /*
 ////////////////  ----- JSON -----  ////////////////
- */
+*/
 
 func handleServeJSONfromStruct(w http.ResponseWriter, r *http.Request) {
 	user := User{true, "Ben Gavan"}
@@ -246,7 +325,7 @@ func handleServeJSONArrayfromStruct(w http.ResponseWriter, r *http.Request) {
 
 /*
 ////////////////  ---- Cookies ----   //////////////////
- */
+*/
 
 func handleGetCookieValue(w http.ResponseWriter, r *http.Request) {
 	c, err := r.Cookie("cookiename")
@@ -280,7 +359,7 @@ func handleDeleteCookie(w http.ResponseWriter, r *http.Request) {
 
 /*
 ////////////////  -----  Parse Form Data  -----  ////////////////
- */
+*/
 func handleBasicWebFormParse(w http.ResponseWriter, r *http.Request) {
 	printInfo(r)
 	switch r.Method {
@@ -368,8 +447,6 @@ func ReceiveFile(w http.ResponseWriter, r *http.Request) {
 	// work as an example
 	writeToFile("test.jpg", Buf.Bytes())
 
-
-
 	contents := Buf.String()
 	fmt.Println(contents)
 	// I reset the buffer in case I want to use it again
@@ -388,7 +465,7 @@ func ReceiveMultiValueForm(w http.ResponseWriter, r *http.Request) {
 	//t := r.MultipartForm.Value
 	//fmt.Println(t)
 	// in your case file would be fileupload
-	text  := r.Form["x"]
+	text := r.Form["x"]
 	fmt.Println("The textis:", text)
 
 	file, _, err := r.FormFile("file")
@@ -406,7 +483,6 @@ func ReceiveMultiValueForm(w http.ResponseWriter, r *http.Request) {
 	// work as an example
 	writeToFile("test.jpg", Buf.Bytes())
 
-
 	for key, value := range r.Form {
 		fmt.Println(key, value)
 	}
@@ -422,10 +498,9 @@ func ReceiveMultiValueForm(w http.ResponseWriter, r *http.Request) {
 	return
 }
 
-
 /*
 ////////////////  ----- Time  ---- ////////////////
- */
+*/
 func timeTest() {
 	currentTime := time.Now()
 	currentUNIX := time.Now().Unix()
@@ -436,10 +511,9 @@ func timeTest() {
 	fmt.Println("Reformed time from unix:", reformedTime)
 }
 
-
 /*
 ////////////////  ----- Random String  ---- ////////////////
- */
+*/
 const letterBytes = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 const (
 	letterIdxBits = 6                    // 6 bits to represent a letter index
@@ -465,14 +539,13 @@ func RandStringBytesMaskImpr(n int) string {
 	return string(b)
 }
 
-
 /*
 ////////////////  ----- Postgresql  ---- ////////////////
 */
 
 /*
 ////////////////  ----- Util functions (aka random useful shit)  ---- ////////////////
- */
+*/
 func printInfo(r *http.Request) {
 	fmt.Println(time.Now(), "|", r.URL.Path, "|", r.Method, "|")
 }
@@ -480,5 +553,11 @@ func printInfo(r *http.Request) {
 func printX() {
 	for i := 0; i < 51; i++ {
 		fmt.Print("X")
+	}
+}
+
+func handleError(err error) {
+	if err != nil {
+		log.Error(err)
 	}
 }

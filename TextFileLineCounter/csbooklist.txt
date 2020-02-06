@@ -1,0 +1,444 @@
+A Distributed Pi-Calculus - Hennessy.pdf
+A Guide to MATLAB for Beginners and Experienced Users - Hunt, Lipsman, and Rosenberg.pdf
+A Programmer's Introduction to C# - Gunnerson.pdf
+A Smarter Way to Learn JavaScript - Meyers.pdf
+A Theory of Objects - Abadi and Cardelli.pdf
+A Theory of Shape Identification - Cao.pdf
+Access Database Design and Programming 3e - Roman.pdf
+Adpating Proofs-As-Programs The Curry-Howard Protocol - Poernomo, Crossley, and Wirsing.pdf
+Advanced Data Mining Techniques - Olson and Delen.pdf
+Advanced Data Structures - Brass.pdf
+Advanced Intelligent Paradigm in Computer Games - Baba, Jain, and Handa.pdf
+Advanced Metaprogramming in Classic C++ - Gennaro.pdf
+Advanced Topics in Types and Programming Languages - Pierce.pdf
+Advances in Computational Intelligence - Yu and Sanchez.pdf
+Advances in Computational Science and Computing - Xiong.pdf
+Advances in Cryptology - CRYPTO '88 - Goldwasser.pdf
+Advances in Pattern Recognition - Carrasco-Ochoa, Martinez-Trinidad, and Kittler.pdf
+Advances in Proof Theory - Kahle, Strahm, and Studer.pdf
+Advenctures in Computer Science From Classical Bits to Quantum Bits - Moret-Bonillo.pdf
+Algebra and Coalgebra in Computer Science - Corradini, Klin, and Cirstea.pdf
+Algebra, Geometry and Software Systems - Joswig and Takayama.pdf
+Algebraic Informatics - Winkler.pdf
+Algebraic Methods Theory, Tools and Applications - Wirsing and Bergstra.pdf
+Algorithm and Complexity 2e - Wilf.pdf
+Algorithm Design - Kleinberg and Tardos.pdf
+Algorithmic information theory - Chaitin.pdf
+Algorithmic Learning Theory - Jantke.pdf
+Algorithmic Mathematics - Hougardy and Vygen.pdf
+Algorithmic Number Theory - Buhler.pdf
+Algorithmic Randomness and Complexity - Downey and Hirschfeldt.pdf
+Algorithmics The Spirit of Computing 3e - Harel.pdf
+Algorithms 4e - Sedgewick and Wayne.pdf
+Algorithms and Data Structures - Dehne, Sack, and Santoro.pdf
+Algorithms and Data Structures - Dehne.pdf
+Algorithms and Data Structures in C++ - Parker.pdf
+Algorithms and Data Structures The Basic Toolbox - Mehlhorn and Sanders.pdf
+Algorithms and Programming Problems and Solutions - Shen.pdf
+Algorithms and Theory of Computation Handbook General Conceopts and Techniques 2e - Atallah and Blanton.pdf
+Algorithms Illuminated Part 1 The Basics - Roughgarden.pdf
+Algorithms Illuminated Part 2 Graph Algorithms and Data Structures - Roughgarden.pdf
+Algorithms in C - Sedgewick.pdf
+Algoritmhs and Data Structures With Applications to Graphics and Geometry - Nievergelt and Hinrichs.pdf
+An Introduction to Computational Learning Theory - Kearns and Vazirani.pdf
+An Introduction to Distance Geometry applied to Molecular Geometry - Lavor.pdf
+An Introduction to Kolmogorov Complexity and Its Applications 2e  - Li and Vitanyi.pdf
+An Introduction to Kolmogorov Complexity and Its Applications 3e - Li and Vitanyi.pdf
+An Introduction to Metaheuristics for Optimization - Chopard and Tomassin.pdf
+An Introduction to Quantum Computing Algorithms - Pittenger.pdf
+An Introduction to the Analysis of Algorithms 2e - Sedgewick amd Flajolet.pdf
+Android Programming for Beginners - Horton.pdf
+Applications of Evolutionary Computation - Esparcia-Alcazar.pdf
+Applications of Process Algebra - Baeten.pdf
+Applied Cryptography 2e - Schneier.pdf
+Applied Quantum Cryptography - Kollmitzer and Pivk.pdf
+Approximate Dynamic Programming Solving the Curses of Dimensionality 2e - Powell.pdf
+Approximation Algorithms - Vazirani.pdf
+Approximation, Randomization and Combinatorial Optimization Algorithms and Techniques - Goel.pdf
+Arduino Cookbook Recipes to Begin, Expand, and Enhance Your Projects 2e - Margolis.pdf
+Arduino Workshop A Hands On Introduction With 65 Projects - Boxall.pdf
+Artificial Intelligence A Modern Approach 3e - Russell and Norvig.pdf
+Automata, Languages and Programming - Baeten.pdf
+Automate the Boring Stuff with Python Practical Programming For Total Beginners - Sweigart.pdf
+Automated Practical Reasoning Algebraic Approaches -  Pfalzgraf and Wang.pdf
+Axioms and Hulls - Knuth.pdf
+Basic Concepts in Information Theory and Coding The Adventures of Secret Agent 00111 - Golomb, Peile, and Scholtz.pdf
+Beginning C++ Through Game Programming 4e - Dawson.pdf
+Beginning Python - Norton.pdf
+Beginning Shell Scripting - Foster-Johnson, Welch, and Anderson.pdf
+Big Data Integration Theory Theory and Methods of Database Mappings, Programming Languages, and Semantic - Majkic.pdf
+Boolean Function Complexity - Paterson.pdf
+Boolean Functions and Computation Models - Clote and Kranakis.pdf
+C and Data Structures - Deshpande and Kakde.pdf
+C and Data Structures By Practice - Vasappanavara.pdf
+C Primer Plus 6e - Prata.pdf
+C Programming Just the Faqs - Chisholm.pdf
+C++ How to Program 8e - Deitel.pdf
+C++ Plus Data Structures 3e - Dale.pdf
+C++ Template Metaprogramming Concepts, Tools and Techniques from Boost and Beyond - Abrahams and Gurtovoy.pdf
+Categorical Combinators, Sequential Algorithms, and Functional Programming - Curien.pdf
+Categories and Computer Science - Walters.pdf
+Cellular Automata A Discrete Universe - Hachinski.pdf
+Cellular Automata A Discrete View of the World - Schiff.pdf
+Challenges for Computational Intelligence - Duch and Mandziuk.pdf
+Chaos-based Cryptography Theory, Algorithms and Applications - Kocarev and Lian.pdf
+Clean Code A Handbook of Agile Software Craftmanship - Martin.pdf
+Coding, Cryptography and Combinatorics - Fend, Niederreiter, and Xing.pdf
+Combinatorial Optimization and Theoretical Computer Science Interfaces and Perspectives - Paschos.pdf
+Complete Guide For Python Programming - Long.pdf
+Complexity and Real Computation - Blum, Cucker, Shub, and Smale.pdf
+Complexity and Real Computation - Blum.pdf
+Complexity of Lattice Problems A Cryptographic Perspective - Micciancio and Goldwasser.pdf
+Complexity Theory and Cryptology An Introduction to Cryptocomplexity - Rothe.pdf
+Compositionality, Concurrency and Partial Correctness Proof Theories for Networks of Processes, and Their Relationship - Zwiers.pdf
+Computability and Complexity From a Programming Perspective - Jones.pdf
+Computability and Complexity Theory - Homer and Selman.pdf
+Computability and Logic 5e - Boolos, Burgess, and Jeffrey.pdf
+Computability and Unsolvability - Davis.pdf
+Computability Theory An Introduction to Recursion Theory - Enderton.pdf
+Computability, Complexity, and Languages Fundamentals of Theoretical Computer Science 2e - David, Sigal, and Weyuker.pdf
+Computable Models - Turner.pdf
+Computation Engineering Applied Automata Theory and Logic - Gopalakrishnan.pdf
+Computation Structures - Ward and Halstead.pdf
+Computation Theory and Logic - Borger.pdf
+Computation, Logic, Games, and Quantum Foundations - Coecke, Ong, and Panagaden.pdf
+Computation, Physics and Beyond - Dinneen, Khoussainov, and Nies.pdf
+Computational and Constructive Design Theory - Wallis.pdf
+Computational Complexity - Papadimitriou.pdf
+Computational Complexity A Conceptual Perspective - Goldreich.pdf
+Computational Complexity A Modern Approach - Arora and Barak.pdf
+Computational Geometry Algorithms and Applications 3e - Berg.pdf
+Computational Geometry An Introduction - Preparata and Shamos.pdf
+Computational Geometry An Introduction Through Randomized Algorithms - Mulmuley.pdf
+Computational Geometry and Computer Graphics in C++ - Laszlo.pdf
+Computational Intelligence in Engineering - Rudas, Fodor, and Kacprzky.pdf
+Computational Intelligence in Engineering - Rudas, Fodor, and Kacprzyk.pdf
+Computational Intelligence Paradigms in Advanced Pattern Classification - Ogiela and Jain.pdf
+Computational Logic - Berger and Schwichtenberg.pdf
+Computational Logistics - Bose.pdf
+Computational Optimization, Methods and Algorithms - Koziel and Yang.pdf
+Computer and Information Security Handbook - Vacca.pdf
+Computer Architecture A Quantitative Approach 4e - Hennessy and Patterson.pdf
+Computer Graphics - Principles and Practice in C (2nd Edition).pdf
+Computer Networking A Top-Down Approach 6e - Kurose and Ross.pdf
+Computer Networks 5e - Tanenbaum and Wetherall.pdf
+Computer Programming and Computer Systems - Hassitt.pdf
+Computer Safety, Reliability, and Security - Flammini, Bologna, and Vittorini.pdf
+Computer Science - Theory and Applications - Fomin and Podolskii.pdf
+Computers and Intractability A Guide to the Theory of NP-Completeness - Garey and Johnson.pdf
+Computing the Brain A Guide to Neuroinformatics - Arbib.pdf
+Computing with Cells and Atoms An introduction to quantum, DNA and membrane computing - Calude and Paun.pdf
+Concepts of Programming Languages 11e - Sebesta.pdf
+Conceptual Exploration - Ganter and Obiedkov.pdf
+Conquering Complexity - Hinchey and Coyle.pdf
+Cracking the Coding Interview - McDowell.pdf
+Cryptography An Introduction 3e - Smart.pdf
+Cryptography and Lattices - Silverman.pdf
+Cryptography Engineering Design Principles and Practical Applications - Ferguson, Scheiner, and Kohno.pdf
+Cryptography Made Simple - Smart.pdf
+Cryptology Classical and Modern 2e - Klima and Sigmon.pdf
+csbooklist
+csbooklist.txt
+Data Abstraction and Structures Using C++ - Headington and Riley.pdf
+Data Abstractions and Problem Solving with C++ - Carrano and Henry.pdf
+Data Mining and Analysis Fundemental Concepts and Algorithms - Zaki.pdf
+Data Mining Concepts and Techniques 3e - Han, Kamber, and Pei.pdf
+Data Mining The Textbook - Aggarwal.pdf
+Data Mining Theory, Methodology, Techniques, and Applications - Williams and Simoff.pdf
+Data Sctructures & Their Algorithms - Lewis and Denenberg.pdf
+Data Structures and Algorithms in C++ 2e - Drozdek.pdf
+Data Structures and Algorithms in Java - Waite.pdf
+Data Structures and Algorithms Using C# - McMillan.pdf
+Data Structures And Algorithms with Python And C++ - Reed and Zeele.pdf
+Data Structures and Algoritmhs in Java 5e - Goodrich and Tamassia.pdf
+Data Structures and Algoritms - Aho.pdf
+Data Structures and Their Algorithms - Lewis and Denenberg.pdf
+Data Structures Demystified A Self-Teaching Guide - Keogh and Davidson.pdf
+Data Structures for Game Programmers - Penton and LaMothe.pdf
+Data Structures Using C - ISRD Group.pdf
+Data Structures Using Pascal - Tenebaum and Augenstein.pdf
+Deep Learning - Goodfellow.pdf
+Digital Signatures - Katz.pdf
+Direct Methods for Sparse Linear Systems - Davis.pdf
+Discrete and Computational Geometry - Devadoss and O'Rourke.pdf
+Distributed Algorithms - Lynch.pdf
+Distributed Operating Systems - Tanenbaum.pdf
+DNS and BIND on IPv6 - Liu.pdf
+Dynamic Logic - Harel, Kozen, and Tiuryn.pdf
+Dynamic Programming - Bellman.pdf
+Dynamic Programming A Computational Tool - Lew and Mauch.pdf
+Dynamic Programming and Optimal Control Vol. I 3e - Bertsekas.pdf
+Dynamics Programming A Computational Tool - Lew and Mauch.pdf
+Effective Modern C++ - Meyers.pdf
+Efficient Implementation of Geometric Algebra - Fontijne.pdf
+Elementary Computability, Formal Languages, and Automata - McNaughton.pdf
+Elements of Computation Theory - Singh.pdf
+Elements of the Theory of Computation 2e - Lewis and Papadimitriou.pdf
+Encyclopedia of Algorithms - Kao.pdf
+Engines of Logic Mathematicians and the Origin of the Computer - Davis.PDF
+Essentials of Software Engineering - Tsui, Karam and Bernal.pdf
+Exact Exponential Algorithms - Fomin and Kratsch.pdf
+Expert C Programming Deep C Secrets - Linden.pdf
+Exploring Arduino Tools and Techniques For Engineering Wizardry - Blum.pdf
+Exploring Randomness - Chaitin.pdf
+First-Order Dynamic Logic - Harel.pdf
+Flexible and Generalized Uncertainty Optimization Theory and Methods - Lodwick and Thipwiwatpotjana.pdf
+Formal Concept Analysis Foundations and Applications - Ganter, Stumme, and Willie.pdf
+Formal Methods - Butler and Schulte.pdf
+Foundation Discrete Mathematics for Computing - Booth.pdf
+Foundation Mathematics for Computer Science A Visual Approach - Vince.pdf
+Foundations for Programming Languages - Mitchell.pdf
+Foundations of Computer Science - Aho and Ullman.pdf
+Foundations of Computing - Gruska.pdf
+Foundations of Crytography Basic Techniques - Goldreich.pdf
+Foundations of Crytography Vol. II Basic Applications - Goldreich.pdf
+Foundations of Geometric Algebra Computing - Hildenbrand.pdf
+From Mathematics to Generic Programming - Stepanov and Rose.pdf
+Functional and Logic Programming - Kameyama and Stuckey.pdf
+Functional C - Hartel and Muller.pdf
+Functional Programming for Java Developers - Wampler.pdf
+Functional Programming Languages, Tools and Architectures - Eisenbach.pdf
+Fundamental Approaches to Software Engineering - Wermelinger and Margaria-Steffen.pdf
+Fundamental of Error Correcting Codes - Huffman and Pless.pdf
+Fundamentals of Computer Algorithms - Horowitz and Sahni.pdf
+Fundamentals of Computer Science Using Java - Hughes.pdf
+Fundamentals of Numerical Computing - Shampine, Aleen, and Pruess.pdf
+Fuzzy Logic Augmentation of Neural and Optimization Algorithms Theoretical Aspects and Real Applications - Castillo, Melin, and Kacprzyk.pdf
+Fuzzy Optimization Recent Advances and Applications - Lodwick and Kacprzyk.pdf
+Fuzzy Probability and Statistics - Buckley.pdf
+Game Programming Patterns - Nystrom.pdf
+Games, Actions and Social Software Multidisciplinary Aspects - Eijck and Verbrugge.pdf
+Geometric Algebra for Computer Graphics - Vince.pdf
+Geometric Computation - Chen and Wang.pdf
+Grey Information Theory and Practical Applications - Liu and Lin.pdf
+Grey Systems Theory and Applications - Liu and Lin.pdf
+Group-based Cryptography - Myasnikov, Shpilrain, and Ushakov.pdf
+Hacking The Art of Exploitation 2e - Erickson.pdf
+Handbook of Algorithms and Data Structures In Pascal and C 2e - Connet and Yates.pdf
+Handbook of Applied Cryptography - Menezes, van Oorschot, and Vanstone.pdf
+Handbook of Dynamic System Modeling - Fishwick.pdf
+Handbook of Logic in Computer Science Vol. 5 Logic and Algebraic Methods - Abramsky, Gabbay, and Maibaum.pdf
+Handbook of Real-Time Fast Fourier Transforms Algorithms to Product Testing - Smith.pdf
+HandsOn Machine Learning with ScikitLearn and TensorFlow - Geron.pdf
+Haskell The Craft of Functional Programming - Thompson.pdf
+High Density Data Storage Principles, Technology, and Materials - Song and Zhu.pdf
+How Linux Work What Every Superuser Should Know 2e - Ward.pdf
+How To Design Programs - Felleisen.pdf
+How to Design Programs An Introduction to Progamming and Computing 2e - Felleisen, Findler, Flatt, and Krishnamurthi.pdf
+Inconsistency Tolerance - Bertossi, Hunter, and Schaub.pdf
+Information and Randomness An Algorithmic Perspective 2e - Calude.pdf
+Information Hiding - Filler.pdf
+Information Randomness and Incompleteness Papers on Algorithmic Information Theory - Chaitin.pdf
+Information Technology and Computational Physics - Kulczycki.pdf
+Information, Physics, and Computation - Mezard and Montanari.pdf
+Information-Theoretic Incompleteness - Chaitin.pdf
+Inside the machine_ an illustrated introduction to microprocessors and computer architecture - Stokes.pdf
+Instruction Sequences for Computer Science -  Bergstra and Middelburg.pdf
+Intelligent Data Mining Techniques and Applications - Ruan.pdf
+Introduction to Algorithms 3e - Cormen, Leiserson, Rivest, and Stein.pdf
+Introduction to Artificial Intelligence - Charniak and McDermott.pdf
+Introduction to Automata Theory, Languages, and Computation - Hopcroft and Ullman.pdf
+Introduction to Compiler Design - Mogensen.pdf
+Introduction to Cryptography with Maple - Pardo.pdf
+Introduction to Deep Learning - Charniak.pdf
+Introduction to Information Retrieval - Hanning, Raghavan, and Schutze.pdf
+Introduction to Languages and The Theory of Computation 4e - Martin.pdf
+Introduction to Linear Logic - Brauner.pdf
+Introduction to Programming in Java An Interdisciplinary Approach 2e - Sedgewick and Wayne.pdf
+Introduction to Software Engineering 2e - Leach.pdf
+Introduction to the Theory of Computation 2e - Sipser.pdf
+Introduction to the Theory of Programming Languages - Dowek and Levy.pdf
+Invitation to Computer Science 8e - Schneider.pdf
+Java Collections An Introduction to Abstract Data Types, Data Structures and Algorithms - Watt and Brown.pdf
+Java How to Program 9e - Deitel.pdf
+Java How to Program Early Objects 11e - Deitel.pdf
+JavaScript for Programmers - Deitel.pdf
+JavaScript Patterns - Stepanov.pdf
+JavaScript The Definitive Guide - Flanagan.pdf
+JavaScript The Good Parts - Crockford.pdf
+Kernelization Theory of Parameterized Preprocessing - Fomin.pdf
+LabVIEW For Everyone - Travis and Kring.pdf
+Learning Python 5e - Lutz.pdf
+Learning Theory - Bshouty and Gentile.pdf
+Lectures on Petri Nets I Basic Models Advances in Petri Nets - Reisig and Rozenberg.pdf
+Lectures on Petri Nets II Applications Advances in Petri Nets - Reisig and Rozenberg.pdf
+Linear Dependence Theory and Computation - Afriat.pdf
+Linear Optimization in Applications - Tang.pdf
+Linear Programming and Generalizations - Denardo.pdf
+Linear Programming and its Applications - Eiselt and Sandblom.pdf
+Linear Programming Mathematics, Theory and Algorithms - Panik.pdf
+Linux from Scratch - Beekmans.pdf
+Logic and Algebra of Specification - Bauer, Brauer, and Schwichtenberg.pdf
+Logic for Applications - Nerode and Shore.pdf
+Logic Functions and Equations Examples and Exercises - Steinbach and Posthoff.pdf
+Logic of Computation - Schwichtenberg.pdf
+Machine Learning for Text - Aggarwal.pdf
+Make Your Own Neural Network - Tariq Rashid.pdf
+Making Embedded Systems_ Design Patterns for Great Software - White.pdf
+Managing and Mining Graph Data - Aggarwal and Wang.pdf
+Managing and Mining Uncertain Data - Aggarwal.pdf
+Mastering Bitcoin Programming The Open Blockchain - Antonopoulos.pdf
+Mathematical Foundations of Computer Science 1995 - Wiedermann and Hajek.pdf
+Mathematical Logic for Computer Science 3e - Ben-Ari.pdf
+Mathematical Logic Foundations for Information Science - Li.pdf
+Mathematical Objects in C++ Computational Tools in A Unified Object - Shapira.pdf
+Mathematical Theory of Computation - Manna.pdf
+Mathematics for 3D Game Programming and Computer Graphics - Lengyel.pdf
+Mathematics for Computer Graphics 3e - Vince.pdf
+Mathematics for Computer Graphics Applications 2e - Mortenson.pdf
+Mathematics for Computer Scientists - Janacek and Close.pdf
+Mathematics of Surfaces - Wilson and Martin.pdf
+MATLAB Demystified - McMahon.pdf
+Mercuiral The Definitive Guide - O'Sullivan.pdf
+Mesh Parameterization Methods and Their Applications - Sheffer, Praun, and Rose.pdf
+Mining Text Data - Aggarwal and Zhai.pdf
+Mobile Networks and Management - Hu.pdf
+Models of Strategic Reasoning Logics, Games, and Communities - Benthem, Ghosh, and Verbrugge.pdf
+Modern C++ Design Generic Programming and Design Patterns Applied - Alexandrescu.pdf
+Modern Coding Theory - Richardson and Urbanke.pdf
+Modern Operating Systems 4e - Tanenbaum and Bos.pdf
+Network Warrior 2e - Donahue.pdf
+Neural Networks and Deep Learning A Textbook - Aggarwal.pdf
+Objects, Abstraction, Data Structures and Design Using C++ - Koffman and Wolfgang.pdf
+Operating Systems Concepts Essentials - Silberschatz.pdf
+Operating Systems Internal and Design Principles - Stallings.pdf
+Oracle PL SQL Programming - Feuerstein and Pribyl.pdf
+Origins and Foundations of Computing - Bauer.pdf
+P, NP, and NP-Completeness The Basics of Computational Complexity - Goldreich.pdf
+Paradigms of Artificial Intelligence Programming Case Studies in Common Lisp - Norvig.pdf
+Parameterized Complexity Theory - Flum and Grohe.pdf
+Parsing Techniques A Practical Guide 2e - Grune and Jacobs.pdf
+Pattern Classification - Duda, Hart, and Stork.pdf
+Pattern Recognition 2e - Theodoridis and Koutroumbas.pdf
+Pattern Recognition and Machine Learning - Bishop.pdf
+Pearls of Functional Algorithm Design - Bird.pdf
+Perceptrons An Introduction to Computational Geometry.pdf
+Post-Quantum Cryptography - Bernstein, Buchmann, and Dahmen.pdf
+Post-Quantum Cryptography - Lange and Steinwandt.pdf
+Post-Quantum Crytopgraphy - Buchmann and Ding.pdf
+Practical Cryptography - Ferguson and Schneier.pdf
+Practical Data Structures in C++ - Flamig.pdf
+Prime Numbers A Computational Perspective 2e - Crandall and Pomerance.pdf
+Primes and Programming An Introduction to Number Theory with Computing - Giblin.pdf
+Principles of Constraint Programming - Apt.pdf
+Principles of Data Mining - Bramer.pdf
+Principles of Declarative Programming - Palamidessi, Glaser, and Meinke.pdf
+Principles of Embedded Networked Systems Design - Pottie and Kaiser.pdf
+Principles of Modern Digital Design - Lala.pdf
+Privacy and Big Data - Craig and Ludloff.pdf
+Probabilistic and Statistical Methods in Cryptology - Neuenschwander.pdf
+Probabilistic and Statistical Methods in Cryptology An Introduction by Selected Topics - Neuenschwander.pdf
+Problem Solving in Automata, Languages, and Complexity - Du and Ko.pdf
+Problem Solving with C++ 7e - Savitch.pdf
+Problem Solving with Computers - Scragg.pdf
+Programming Android - Mednieks.pdf
+Programming ArcObjects with VBA A Task-Oriented Approach 2e - Chang.pdf
+Programming Arduino Getting Started with Sketches 2e - Monk.pdf
+Programming C# 2e - Liberty.pdf
+Programming in Haskell - Hutton.pdf
+Programming Languages Implementations, Logics, and Programs - Glaser, Hartel, and Kuchen.pdf
+Programming Languages Pragmatics 4e - Scott.pdf
+Programming Languages Principles and Practice 3e - Louden and Lambert.pdf
+Programming Perl 4e -  Christiansen, Foy, and Wall.pdf
+Programming Python 4e - Lutz.pdf
+Proof Theory for Fuzzy Logics - Metcalfe, Olivetty, and Gabbay.pdf
+Proof Theory in Computer Science - Kahle, Schroeder-Heister, and Stark.pdf
+Proofs and Algorithms An Introduction to Logic and Computability - Dowek.pdf
+Provable Security - Boyen and Chen.pdf
+Pyramid Algorithms A Dynamic Programming Approach to Curves and Surfaces for Geometric Modeling - Goldman.pdf
+Python Crash Course - Matthes.pdf
+Python for Data Analysis - McKinney.pdf
+Python Pocket Reference Python In Your Pocket 5e - Lutz.pdf
+Python Programming An Introduction to Computer Science 2e - Zelle.pdf
+Quantum Attacks on Public-Key Cryptosystems - Yan.pdf
+Quantum Computing An Environment for Intelligent Large Scale Real Application - Hassanien, Elhoseny, and Kacprzyk.pdf
+Quantum Computing for Computer Architects - Metodi and Chong.pdf
+Quantum Computing for Computer Scientists - Yanofsky and Mannucci.pdf
+Quantum Computing from the Ground Up - Riley Tipton Perry.pdf
+Quantum Machine Learning What Quantum Computing Means to Data Mining - Wittek.pdf
+R-Trees Theory and Applications - Manolopoulos.pdf
+Randomized Algortihms - Motwani and Raghavan.pdf
+Reachability Problems - Delzanno and Potapov.pdf
+Real World Haskell - O'Sullivan, Goerzen, and Stewart.pdf
+Real-World Functional Programming With examples in F# and C# - Petricek and Skeet.pdf
+Recent Advances in Constraints - Larrosa and O'Sullivan.pdf
+Recent Advances In Simulated Evolution and Learning - Tan.pdf
+Recent Trends in Algebraic Development Techniques - Wirsing, Pattinson, and Hennicker.pdf
+Relevant Search With applications for Solr and Elasticsearch - Turnbull and Berryman.pdf
+Reliable Data Structures in C - Plum.pdf
+Reversible and Quantum Circuits Optimization and Complexity Analysis - Abdessaied and Drechsler.pdf
+Reversible Computing Fundamentals, Quantum Computing, and Applications - Vos.pdf
+Robot Intelligence An Advanced Knowledge Processing Approach - Liu.pdf
+Rule-Based Reasoning, Programming and Applications - Bassiliades, Governatori, and Paschke.pdf
+S Programmining - Venables.pdf
+Selected Areas in Cryptography - Kranakis and Oorschot.pdf
+Selected Topics In Information and Coding Theory - Woungang and Misra.pdf
+Semantics of Programming Languages Structures and Techniques - Gunter.pdf
+Sequential Methods and Their Applications - Mukhopadhyay and Silva.pdf
+Shadow Algorithms Data Miner - Woo and Poulin.pdf
+Simulated Evolution and Learning - Deb.pdf
+Social Network Data Analytics - Aggarwal.pdf
+Soft Computing Applications - Bonarini, Masulli, and Pasi.pdf
+Soft Computing Integrating Evolutionary, Neural, and Fuzzy Systems - Tettamanzi and Tomassini.pdf
+Software Engineering - Hoda.pdf
+Software for Algebraic Geometry - Stillman, Takayama, and Verschelde.pdf
+Solving PDEs in C++ Numerical Methods in a Unified Object-Oriented Approach - Shapria.pdf
+Spatially Structured Evolutionary Algorithms Artificial Evolution in Space and Time - Tomassini.pdf
+Stochastic Linear Programming Models, Theory, and Computation - Kall and Mayer.pdf
+Structure and Interpretation of Computer Programs 2e - Abelson and Sussman.pdf
+Structured Computer Organization 6e - Tanenbaum and Austin.pdf
+Super-Recursive Algorithms - Burgin.pdf
+Superintelligence Paths, Dancers, Strategies - Bostrom.pdf
+Swift for Programmers - Deitel.pdf
+Temporal Logics in Computer Science Finite-State Systems - Demri, Goranko, and Lange.pdf
+The Art of C Programming - Jones and Stewart.pdf
+The Art of Computer Programming Vol. 1 Fundamental Algorithms 3e - Knuth.pdf
+The Art of Computer Programming Vol. 2 Seminumerical Algorithms 3e - Knuth.pdf
+The Art of Computer Programming Vol. 3 Sorting and Searching 3e - Knuth.pdf
+The Art of Computer Programming Vol. 4A Combinatorial Algorithms Part 1 - Knuth.pdf
+The Art of Lisp Programming - Jones, Maynard, and Stewart.pdf
+The Art of Unix Programming - Raymond.pdf
+The Book of C - Dhingra and Bhaskar.pdf
+The C Programming Language 2e - Kernighan and Ritchie.pdf
+The C++ Programming Language 4e - Stroustrup.pdf
+The Complexity Theory Companion - Hemaspaandra and Ogihara.pdf
+The Computational Complexity of Equivalence and Isomorphism Problems - Thierauf.pdf
+The Computational Complexity of Machine Learning - Kearns.pdf
+The Craft of Programming - Reynolds.pdf
+The Elements of Computing Systems Building a Modern Computer from First Principles - Nisan and Schocken.pdf
+The Evolution of Programs - Dershowitz.pdf
+The Go Programming Language - Donovan and Kernighan.pdf
+The Handbook of Brain Theory and Neural Networks - Arbib.pdf
+The Hundred-Page Machine Learning Book - Burkov.pdf
+The Little Schemer 4e - Friendman and Felleisen.pdf
+The LLL Algorithm Survey and Applications - Nguyen and Vallee.pdf
+The Modern Algebra of Information Retrieval - Dominich.pdf
+The Pillars of Computation Theory - Rosenberg.pdf
+The Practice of Programming - Kernighan and Pike.pdf
+The Principles of Object Oriented JavaScript - Zakas.pdf
+The Self-Taught Programmer The Definitive Guide to Programming Professionally-Self-Taught Media - Cory Althoff.pdf
+The Theory of Computation - Moret.pdf
+The Theory of Error Correcting Codes - MacWilliams and Sloane.pdf
+The Tomes of Delphi Algorithms and Data Structures - Bucknall.pdf
+The Universal Computer 3e - Davis.pdf
+The Unknown Component Problem Theory and Applications - Villa.pdf
+Theoretical Aspects of Computer Science Adcanced Lectures - Khosrovshahi, Shokoufandeh, and Shokrollahi.pdf
+Theoretical Aspects of Computer Science Advanced Lectures - Khosrovshahi, Shokufandeh, and Shokrollahi.pdf
+Theoretical Aspects of Computing - Hung and Wirsing.pdf
+Theoretical Aspects of Object-Oriented Programming Types, Semantics, and Language Design - Gunter and Mitchell.pdf
+Theoretical Computer Science - Italiano, Moggi, and Laura.pdf
+Theoretical Computer Science Introduction to Automata, Computability, Complexity, Algorithmics, Randomization, Communication, and Cryptography - Hromkovic.pdf
+Theories of Computational Complexity - Calude.pdf
+Theories of Programming Languages - Reynolds.pdf
+Theory of Computation - Kozen.pdf
+Theory of Computational Complexity - Du and Ko.pdf
+Theory of Quantum Computatioon, Communication, and Cryptography - Childs and Mosca.pdf
+Topics in Cryptology - Smart.pdf
+Towards Evolvable Hardware The Evolutionary Engineering Approach -  Sanchez and Tomassini.pdf
+Trends in Functional Progamming Vol. 4 - Gilmore.pdf
+Trends in Functional Progamming Vol. 5 - Loidl.pdf
+Trends in Mathematics and Computational Intelligence - Cornejo.pdf
+Turing Machines with Sublogarithmic Space - Szepietowski.pdf
+Two-Dimensional Information Theory and Coding With Applications to Graphics Data and High-Density Storage Media - Justesen and Forchhammer.pdf
+Types and Programming Languages - Pierce.pdf
+Writing Excel Macros - Roman.pdf
