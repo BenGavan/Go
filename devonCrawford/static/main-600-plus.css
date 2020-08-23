@@ -1,0 +1,12 @@
+header {
+    color: white;
+    background-color: transparent;
+}
+
+#menu-btn {
+    display: none;
+}
+
+#desktop-nav {
+    display: flex;
+}

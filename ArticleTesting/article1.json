@@ -1,0 +1,16 @@
+{
+  "title": "Article 1",
+  "date": "date 1",
+  "video_url": "http://www.youtube.com/watch.0001/1..",
+  "subject_id": "0001",
+  "elements": [
+    {
+      "tag": "p",
+      "content": "first"
+    },
+    {
+      "tag": "p",
+      "content": "second"
+    }
+  ]
+}

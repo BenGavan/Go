@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>{{ .Title }}</h1>
+<h6>{{ .Date }}</h6>
+
+{{ range .Elements }}
+    {{ if eq .Tag "p" }}
+        <p>{{ .Content }}</p>
+    {{ else if eq .Tag "h2"}}
+        <h2>{{ .Content }}</h2>
+    {{ end }}
+{{ end }}
+</body>
+</html>

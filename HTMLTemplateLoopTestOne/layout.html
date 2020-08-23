@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>{{ .Title }}</h1>
+
+{{ range .Items }}
+    <h1>{{ .PropertyOne}}</h1>
+    <h2>{{ .Number }}</h2>
+        {{ if .Complete }}
+            <h3>Success</h3>
+        {{ else }}
+            <h3>Still needs work</h3>
+        {{ end }}
+    <h3>{{ .Complete }}</h3>
+{{ end }}
+
+{{ range $item := .Items }}
+    <h1>{{ $item.PropertyOne}}</h1>
+    <h2>{{ $item.Number }}</h2>
+    <h3>{{ $item.Complete }}</h3>
+{{ end }}
+
+<table>
+    <tr>
+        <th>Property</th>
+        <th>Number</th>
+        <th>Complete?</th>
+    </tr>
+    {{ range .Items }}
+    <tr>
+        <td>{{ .PropertyOne }}</td>
+        {{ if eq .Number 1}}
+            <td>One</td>
+        {{ else }}
+            <td>{{ .Number }}</td>
+        {{ end }}
+        {{ if .Complete }}
+            <td>
+                <label>
+                    <input type="checkbox" checked="checked">
+                </label>
+            </td>
+        {{ else }}
+            <td>
+                <label>
+                    <input type="checkbox">
+                </label>
+            </td>
+        {{ end }}
+    </tr>
+    {{ end }}
+</table>
+
+</body>
+</html>

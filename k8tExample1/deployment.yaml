@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8t1-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8t1-deployment
+  template:
+    metadata:
+      labels:
+        app: k8t1-deployment
+    spec:
+      containers:
+        - name: k8t1-container
+          image: bg/k8t1
+          ports:
+            - containerPort: 8080

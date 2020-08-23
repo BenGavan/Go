@@ -207,7 +207,7 @@ func printSeparator() {
 
 /*
 ////////////////  ----- Random String  ---- ////////////////
- */
+*/
 const letterBytes = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 const (
 	letterIdxBits = 6                    // 6 bits to represent a letter index

@@ -1,0 +1,15 @@
+{
+  "title": "title here",
+  "date": "date",
+  "video_url": "http://www.youtube.com/watch...",
+  "elements": [
+    {
+      "tag": "p",
+      "content": "first"
+    },
+    {
+      "tag": "p",
+      "content": "second"
+    }
+  ]
+}

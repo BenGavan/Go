@@ -17,7 +17,7 @@ const (
 func main() {
 	fmt.Println("Hey")
 
-	books := searchForString("metric", MATH)
+	books := searchForString("Basic", MATH)
 	for i := 0; i < len(books); i++ {
 		fmt.Println(books[i])
 	}

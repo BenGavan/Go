@@ -1,0 +1,230 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 50px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    color: black;
+    background-color: white;
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.whiteHeader {
+    color: black;
+    background-color: white;
+}
+
+#desktop-nav {
+    display: none;
+}
+
+#menu-btn {
+    padding-right: 20px;
+}
+
+a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition-duration: 0.3s;
+    transition-property: background-color;
+    transition-timing-function: ease;
+}
+
+a:hover {
+    background-color: #32323210;
+}
+
+header > nav {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid hotpink;*/
+}
+
+header > nav > div {
+    display: flex;
+    align-items: center;
+}
+
+/* ABOVE THE FOLD */
+#atf {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: url("images/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+#atf-centre-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    /*margin-bottom: 10px;*/
+
+    margin: 100px 50px;
+}
+
+#atf-centre-text > h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#atf-centre-text > p {
+    font-size: 30px;
+}
+
+#read-more {
+    cursor: pointer;
+}
+
+#atf-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hotpink;
+    margin-bottom: 10px;
+}
+
+#atf-more > h3 {
+    padding-bottom: 10px;
+}
+
+#atf-more-arrows {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+/* My Work */
+section#my-work {
+    color: white;
+    background-color: #191919;
+
+    padding: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+section#my-work p {
+    font-size: 18px;
+    padding-top: 50px;
+}
+
+#my-work > #details {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#my-work > #details > div {
+    padding-bottom: 50px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+ol {
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 10px 20px;
+
+    font-size: 14px;
+}
+
+ol li {
+    padding-bottom: 5px;
+}
+
+/* Projects */
+section#projects {
+    padding: 50px;
+}
+
+section#projects p {
+    padding-top: 40px;
+}
+
+#project-details {
+    padding-top: 50px;
+}
+
+#project-details > div {
+    padding-bottom: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #363636;
+    color: white;
+}
+
+footer > #stay-connected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+}
+
+footer #footer-icons {
+    width: 70vw;
+    height: 50px;
+
+    margin-top: 50px;
+
+    background-color: white;
+}
+
+footer #footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #232323;
+}
+
+
+footer nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #535353;
+}
+
+
+

@@ -1,0 +1,1614 @@
+<html><head><style type="text/css">pre { margin: 1px }
+        .fmt0 {  } /* normal */
+        .fmt1 {  } /* background */
+        .fmt2 { background-color: #ffcabf; } /* line:error */
+        .fmt3 { background-color: #fffbbf; } /* line:warning */
+        .fmt4 { background-color: #bfd6ff; } /* line:badbox */
+        .fmt5 {  } /* line:bookmark */
+        .fmt6 {  } /* line:bookmark0 */
+        .fmt7 {  } /* line:bookmark1 */
+        .fmt8 {  } /* line:bookmark2 */
+        .fmt9 {  } /* line:bookmark3 */
+        .fmt10 {  } /* line:bookmark4 */
+        .fmt11 {  } /* line:bookmark5 */
+        .fmt12 {  } /* line:bookmark6 */
+        .fmt13 {  } /* line:bookmark7 */
+        .fmt14 {  } /* line:bookmark8 */
+        .fmt15 {  } /* line:bookmark9 */
+        .fmt16 { color: #555580; } /* magicComment */
+        .fmt17 { background-color: #a8cf83; } /* commentTodo */
+        .fmt18 { color: #808080; } /* comment */
+        .fmt19 { color: #800000; } /* keyword */
+        .fmt20 { font-weight: 700;color: #0095ff; } /* extra-keyword */
+        .fmt21 { color: #808000; } /* math-keyword */
+        .fmt22 { border-bottom: 1px solid #0000ff;color: #0000ff; } /* link */
+        .fmt23 { font-weight: 700;color: #0055ff; } /* align-ampersand */
+        .fmt24 { color: #008080; } /* verbatim */
+        .fmt25 { color: #800000; } /* sweave-block */
+        .fmt26 { font-weight: 700;color: #0095ff; } /* sweave-delimiter */
+        .fmt27 { color: #800000; } /* pweave-block */
+        .fmt28 { font-weight: 700;color: #0095ff; } /* pweave-delimiter */
+        .fmt29 { color: #804000; } /* picture */
+        .fmt30 { color: #c06000; } /* picture-keyword */
+        .fmt31 { font-weight: 700;background-color: #ffff7f; } /* braceMatch */
+        .fmt32 { font-weight: 700;color: #ffff7f;background-color: #c00000; } /* braceMismatch */
+        .fmt33 { color: #000000;background-color: #ffef0b; } /* search */
+        .fmt34 { color: #008000; } /* numbers */
+        .fmt35 { color: #509600; } /* math-delimiter */
+        .fmt36 { color: #ff0000; } /* text */
+        .fmt37 { color: #ff0088; } /* escapeseq */
+        .fmt38 { border-bottom: 1px dashed #ff0000; } /* spellingMistake */
+        .fmt39 { border-bottom: 1px dashed #008000; } /* wordRepetition */
+        .fmt40 { border-bottom: 1px dashed #008000; } /* wordRepetitionLongRange */
+        .fmt41 { text-decoration: line-through; } /* badWord */
+        .fmt42 { border-bottom: 1px dashed #000080; } /* grammarMistake */
+        .fmt43 { background-color: #00ffa0; } /* grammarMistakeSpecial1 */
+        .fmt44 { background-color: #00c0ff; } /* grammarMistakeSpecial2 */
+        .fmt45 { background-color: #00ff00; } /* grammarMistakeSpecial3 */
+        .fmt46 { background-color: #c8ff61; } /* grammarMistakeSpecial4 */
+        .fmt47 { background-color: #ffbf9f; } /* latexSyntaxMistake */
+        .fmt48 { font-style: italic;color: #0000ff; } /* temporaryCodeCompletion */
+        .fmt49 { color: #000080; } /* environment */
+        .fmt50 { color: #008000; } /* referencePresent */
+        .fmt51 { border-bottom: 1px dashed #008000;color: #008000; } /* referenceMissing */
+        .fmt52 { border-bottom: 1px dashed #800080;color: #800080; } /* referenceMultiple */
+        .fmt53 { color: #008000; } /* citationPresent */
+        .fmt54 { border-bottom: 1px dashed #008000;color: #008000; } /* citationMissing */
+        .fmt55 { color: #008000; } /* packagePresent */
+        .fmt56 { border-bottom: 1px dashed #008000;color: #008000; } /* packageMissing */
+        .fmt57 { font-weight: 700;color: #000000; } /* structure */
+        .fmt58 { background-color: #eeeeff; } /* current */
+        .fmt59 { background-color: #b2d8ff; } /* selection */
+        .fmt60 { background-color: #ffaaaa; } /* replacement */
+        .fmt61 { text-decoration: line-through;background-color: #ffaaaa; } /* diffDelete */
+        .fmt62 { background-color: #aaffaa; } /* diffAdd */
+        .fmt63 { background-color: #ffff50; } /* diffReplace */
+        .fmt64 { background-color: #ddffcc; } /* previewSelection */
+        .fmt65 { font-weight: 700;color: #0095ff; } /* txs-test */
+        .fmt66 { font-weight: 700; } /* txs-test-summary */
+        .fmt67 { color: #008000; } /* txs-test-pass */
+        .fmt68 { color: #c00000; } /* txs-test-fail */
+        .fmt69 { color: #ea8800; } /* txs-test-warn */
+        .fmt70 { color: #808000; } /* txs-test-qdebug */
+        .fmt71 { color: #ffa500; } /* dtx:guard */
+        .fmt72 { font-weight: 700;color: #006400; } /* dtx:macro */
+        .fmt73 { color: #008080; } /* dtx:verbatim */
+        .fmt74 { color: #cc8100; } /* dtx:specialchar */
+        .fmt75 { font-weight: 700;color: #10c010; } /* dtx:commands */
+        .fmt76 { color: #b200ff; } /* lua:keyword */
+        .fmt77 { color: #808080; } /* lua:comment */
+        .fmt78 { color: #804000; } /* asymptote:block */
+        .fmt79 { color: #800080; } /* asymptote:keyword */
+        .fmt80 { color: #808000; } /* asymptote:type */
+        .fmt81 { color: #008000; } /* asymptote:numbers */
+        .fmt82 { color: #000080; } /* asymptote:string */
+        .fmt83 { color: #808080; } /* asymptote:comment */
+        .fmt84 { color: #808080; } /* qtscript:comment */
+        .fmt85 { color: #008000; } /* qtscript:string */
+        .fmt86 { color: #000080; } /* qtscript:number */
+        .fmt87 { color: #808000; } /* qtscript:keyword */
+        .fmt88 { color: #800000; } /* qtscript:txs-variable */
+        .fmt89 { font-style: italic; } /* qtscript:txs-function */
+        .fmt90 { background-color: #ffff7f; } /* preedit */
+    </style></head><body><pre><span class="fmt19">\documentclass</span>[]{article} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\usepackage</span>{color} </pre>
+<pre><span class="fmt19">\definecolor</span>{editorGray}{rgb}{0.95, 0.95, 0.95} </pre>
+<pre><span class="fmt19">\definecolor</span>{editorOcher}{rgb}{1, 0.5, 0} <span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">#FF7F00</span><span class="fmt18"> </span><span class="fmt18">-></span><span class="fmt18"> </span><span class="fmt18">rgb(239,</span><span class="fmt18"> </span><span class="fmt18">169,</span><span class="fmt18"> </span><span class="fmt18">0)</span> </pre>
+<pre><span class="fmt19">\definecolor</span>{editorGreen}{rgb}{0, 0.5, 0} <span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">#007C00</span><span class="fmt18"> </span><span class="fmt18">-></span><span class="fmt18"> </span><span class="fmt18">rgb(0,</span><span class="fmt18"> </span><span class="fmt18">124,</span><span class="fmt18"> </span><span class="fmt18">0)</span> </pre>
+<pre><span class="fmt19">\usepackage</span>{upquote} </pre>
+<pre><span class="fmt19">\usepackage</span>{listings} </pre>
+<pre><span class="fmt19">\lstdefinelanguage</span>{JavaScript}{ </pre>
+<pre>	morekeywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break}, </pre>
+<pre>	morecomment=[s]{/*}{*/}, </pre>
+<pre>	morecomment=[l]//, </pre>
+<pre>	morestring=[b]", </pre>
+<pre>	morestring=[b]' </pre>
+<pre>} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\lstdefinelanguage</span>{HTML5}{ </pre>
+<pre>	language=html, </pre>
+<pre>	sensitive=true,  </pre>
+<pre>	alsoletter={&lt;>=-}, </pre>
+<pre>	otherkeywords={ </pre>
+<pre>		<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">HTML</span><span class="fmt18"> </span><span class="fmt18">tags</span> </pre>
+<pre>		&lt;html>, &lt;head>, &lt;title>, &lt;/title>, &lt;meta, />, &lt;/head>, &lt;body>, </pre>
+<pre>		&lt;canvas, \/canvas>, &lt;script>, &lt;/script>, &lt;/body>, &lt;/html>, &lt;!, html>, &lt;style>, &lt;/style>, >&lt; </pre>
+<pre>	},   </pre>
+<pre>	ndkeywords={ </pre>
+<pre>		<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">General</span> </pre>
+<pre>		=, </pre>
+<pre>		<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">HTML</span><span class="fmt18"> </span><span class="fmt18">attributes</span> </pre>
+<pre>		charset=, id=, width=, height=, </pre>
+<pre>		<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">CSS</span><span class="fmt18"> </span><span class="fmt18">properties</span> </pre>
+<pre>		border:, transform:, -moz-transform:, transition-duration:, transition-property:, transition-timing-function: </pre>
+<pre>	},   </pre>
+<pre>	morecomment=[s]{&lt;!--}{-->}, </pre>
+<pre>	tag=[s] </pre>
+<pre>} </pre>
+<pre> </pre>
+<pre><span class="fmt19">\lstset</span>{<span class="fmt18">%</span> </pre>
+<pre>	<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Basic</span><span class="fmt18"> </span><span class="fmt18">design</span> </pre>
+<pre>	backgroundcolor=<span class="fmt19">\color</span>{editorGray}, </pre>
+<pre>	basicstyle={<span class="fmt19">\small\ttfamily</span>},    </pre>
+<pre>	frame=l, </pre>
+<pre>	<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Line</span><span class="fmt18"> </span><span class="fmt18">numbers</span> </pre>
+<pre>	xleftmargin={0.75cm}, </pre>
+<pre>	numbers=left, </pre>
+<pre>	stepnumber=1, </pre>
+<pre>	firstnumber=1, </pre>
+<pre>	numberfirstline=true, </pre>
+<pre>	<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Code</span><span class="fmt18"> </span><span class="fmt18">design</span><span class="fmt18">   </span> </pre>
+<pre>	keywordstyle=<span class="fmt19">\color</span>{blue}<span class="fmt19">\bfseries</span>, </pre>
+<pre>	commentstyle=<span class="fmt19">\color</span>{darkgray}<span class="fmt19">\ttfamily</span>, </pre>
+<pre>	ndkeywordstyle=<span class="fmt19">\color</span>{editorGreen}<span class="fmt19">\bfseries</span>, </pre>
+<pre>	stringstyle=<span class="fmt19">\color</span>{editorOcher}, </pre>
+<pre>	<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Code</span> </pre>
+<pre>	language=HTML5, </pre>
+<pre>	alsolanguage=JavaScript, </pre>
+<pre>	alsodigit={.:;}, </pre>
+<pre>	tabsize=2, </pre>
+<pre>	showtabs=false, </pre>
+<pre>	showspaces=false, </pre>
+<pre>	showstringspaces=false, </pre>
+<pre>	extendedchars=true, </pre>
+<pre>	breaklines=true,         </pre>
+<pre>	<span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Support</span><span class="fmt18"> </span><span class="fmt18">for</span><span class="fmt18"> </span><span class="fmt18">German</span><span class="fmt18"> </span><span class="fmt18">umlauts</span> </pre>
+<pre>	literate=<span class="fmt18">%</span> </pre>
+<pre>	{Ö}{{\"O}}1 </pre>
+		<pre>	{Ä}{{\"A}}1 </pre>
+		<pre>	{Ü}{{\"U}}1 </pre>
+		<pre>	{ß}{{<span class="fmt19"><span class="fmt47">\ss</span></span>}}1 </pre>
+<pre>	{ü}{{\"u}}1 </pre>
+    <pre>	{ä}{{\"a}}1 </pre>
+    <pre>	{ö}{{\"o}}1 </pre>
+    <pre>} </pre>
+    <pre> </pre>
+    <pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Packages</span> </pre>
+    <pre><span class="fmt18">%\usepackage{showframe}</span> </pre>
+    <pre><span class="fmt19">\usepackage</span>{multicol} </pre>
+    <pre><span class="fmt19">\usepackage</span>{graphicx} </pre>
+    <pre><span class="fmt19">\usepackage</span>{textcomp} </pre>
+    <pre><span class="fmt19">\usepackage</span>[T1]{fontenc} </pre>
+    <pre><span class="fmt19">\usepackage</span>{wrapfig} </pre>
+    <pre> </pre>
+    <pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">Auto-hyphen</span><span class="fmt18"> </span><span class="fmt18">controlls</span> </pre>
+    <pre><span class="fmt19">\tolerance</span>=1 </pre>
+    <pre><span class="fmt19">\emergencystretch</span>=<span class="fmt19">\maxdimen</span> </pre>
+    <pre><span class="fmt19">\hyphenpenalty</span>=10000 </pre>
+    <pre><span class="fmt19">\hbadness</span>=10000 </pre>
+    <pre> </pre>
+    <pre><span class="fmt18">%</span><span class="fmt18"> </span><span class="fmt18">New</span><span class="fmt18"> </span><span class="fmt18">Commands</span><span class="fmt18"> </span> </pre>
+    <pre><span class="fmt19">\newcommand</span>{\&lt;}{<span class="fmt19">\guilsinglleft</span>} </pre>
+    <pre><span class="fmt19">\renewcommand</span>{\>}{<span class="fmt19">\guilsinglright</span>} </pre>
+    <pre><span class="fmt19">\renewcommand</span>{<span class="fmt19">\it</span>}[1]{<span class="fmt19">\textit</span>{#1}} </pre>
+<pre><span class="fmt19">\renewcommand</span>{<span class="fmt19">\bf</span>}[1]{<span class="fmt19">\textbf</span>{#1}} </pre>
+<pre> </pre>
+<pre><span class="fmt18">%opening</span> </pre>
+<pre><span class="fmt19">\title</span>{HTML <span class="fmt19">\&amp;</span> CSS} </pre>
+<pre><span class="fmt19">\author</span>{Ben Gavan} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">document</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt19">\maketitle</span> </pre>
+<pre> </pre>
+<pre><span class="fmt19">\tableofcontents</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">abstract</span></span><span class="fmt20">}</span> </pre>
+<pre>Acronyms: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt38">DOM</span> = Document Object Model </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span>  </pre>
+<pre>Useful reminders: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Content <span class="fmt35">$</span><span class="fmt21">\rightarrow</span><span class="fmt35">$</span> Padding <span class="fmt35">$</span><span class="fmt21">\rightarrow</span><span class="fmt35">$</span> Border <span class="fmt35">$</span><span class="fmt21">\rightarrow</span><span class="fmt35">$</span> Margin  </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">abstract</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">Terminal</span><span class="fmt18"> </span><span class="fmt18">Essentials</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Terminal</span><span class="fmt57"> </span><span class="fmt57">Essentials</span>}g </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Basic</span><span class="fmt57"> </span><span class="fmt57">Commands</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt38">pwd</span>: Print working directory  </pre>
+<pre>	<span class="fmt19">\item</span> ls: list </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt39">ls</span> -la : list <span class="fmt39">list</span> all - shows more detail  </pre>
+<pre>	<span class="fmt19">\item</span> clear: <span class="fmt39">clear</span> current terminal </pre>
+<pre>	<span class="fmt19">\item</span> cat: Prints out the contents of a file into the <span class="fmt38">termial</span>  </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt38">mkdir</span> <span class="fmt38">dir-</span>name: makes a new directory with the name as <span class="fmt39">the</span> string supplied after '<span class="fmt38">mkdir</span>'  within the current <span class="fmt38">dirrectory</span>  </pre>
+<pre>	<span class="fmt19">\item</span> rm file-name: remove directory  </pre>
+<pre>	<span class="fmt19">\item</span> rm -rf <span class="fmt38">dir-</span>name: <span class="fmt40">remove</span> <span class="fmt40">directory</span> recursively (until complete) </pre>
+<pre>	<span class="fmt19">\item</span> touch <span class="fmt38">txt-</span>file-name: creates new blank <span class="fmt38">txt</span> file with <span class="fmt39">with</span> <span class="fmt39">file</span> name specified </pre>
+<pre>	<span class="fmt19">\item</span> open file-name: opens the file <span class="fmt40">specified</span> </pre>
+<pre>	 </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Git</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> git <span class="fmt38">init</span>: creates an <span class="fmt38">emtpty</span> git <span class="fmt38">repo</span> within current <span class="fmt38">dir</span> </pre>
+<pre>	<span class="fmt19">\item</span> git status: Gives info on what files haven't been added </pre>
+<pre>	<span class="fmt19">\item</span> git add  </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>		<span class="fmt19">\item</span> <span class="fmt38">dir-</span>name: adds only that <span class="fmt38">dir</span> to the staging index </pre>
+<pre>		<span class="fmt19">\item</span> . : add everything below current <span class="fmt38">dir</span> that's changed </pre>
+<pre>		<span class="fmt19">\item</span>  - -all : adds <span class="fmt39">all</span> files below and above the current <span class="fmt38">dir</span>  </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> git commit  </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>		<span class="fmt19">\item</span> -m "commit-message": commits everything in the staging index along with a commit message. </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> git remote add origin : connects the local <span class="fmt38">repo</span> to the cloud  </pre>
+<pre>	<span class="fmt19">\item</span> git push -u origin master : : pushes to the <span class="fmt40">master</span>  </pre>
+<pre>	<span class="fmt19">\item</span> git push: <span class="fmt40">pushes</span> to remote git 'origin/<span class="fmt40">master</span>' (on <span class="fmt38">github</span>) </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">Key</span><span class="fmt18"> </span><span class="fmt18">Board</span><span class="fmt18"> </span><span class="fmt18">Shortcuts</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Key</span><span class="fmt57"> </span><span class="fmt57">Board</span><span class="fmt57"> </span><span class="fmt57">Shortcuts</span>} </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>		<span class="fmt19">\item</span> '<span class="fmt38">cmnd</span> + / ' comment current line  </pre>
+<pre>		<span class="fmt19">\item</span> 'p\{<span class="fmt38">TEXT\_HERE</span>\} + tab' creates p tag with text here as <span class="fmt39">text</span>  </pre>
+<pre>		<span class="fmt19">\item</span> '<span class="fmt38">lorem</span>' <span class="fmt40">creates</span> some <span class="fmt38"><span class="fmt39">lorem</span></span> text </pre>
+<pre>		<span class="fmt19">\item</span> 'control + space' when in element "" to bring up options of possible selections </pre>
+<pre>		<span class="fmt19">\item</span> 'option + click' to select <span class="fmt38">curser</span> on multiple lines </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">HTML</span><span class="fmt18"> </span><span class="fmt18">Essentials</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">HTML</span><span class="fmt57"> </span><span class="fmt57">Essentials</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">File</span><span class="fmt57"> </span><span class="fmt57">Naming</span><span class="fmt57"> </span><span class="fmt57">conventions</span>} </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>		<span class="fmt19">\item</span> all <span class="fmt38">html</span> files end with the extension '.<span class="fmt38">html</span>' </pre>
+<pre>		<span class="fmt19">\item</span> all <span class="fmt38">css</span> style sheets end with the <span class="fmt40">extension</span> '.<span class="fmt38">css</span>' </pre>
+<pre>		<span class="fmt19">\item</span> home/default/main page should be called 'index.<span class="fmt38">html</span>' </pre>
+<pre>		<span class="fmt19">\item</span> style sheet for main page <span class="fmt40">should</span> be <span class="fmt40">called</span> 'main.<span class="fmt38">css</span>' </pre>
+<pre>		<span class="fmt19">\item</span> only use lower case alphanumeric characters (a-z, 0-9)  </pre>
+<pre>		<span class="fmt19">\item</span> no spaces </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Folder</span><span class="fmt57"> </span><span class="fmt57">Naming</span><span class="fmt57"> </span><span class="fmt57">Conventions</span>} </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>		<span class="fmt19">\item</span> only use lower case alphanumeric characters (a-z, 0-9)  </pre>
+<pre>		<span class="fmt19">\item</span> no spaces </pre>
+<pre>		<span class="fmt19">\item</span> follow <span class="fmt38">seperation</span> of <span class="fmt38">cencerns</span>  </pre>
+<pre>		<span class="fmt19">\item</span> for folder holding <span class="fmt38">css</span> files, use '<span class="fmt38">css</span>' </pre>
+<pre> </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57"><span class="fmt38">Emmet</span></span><span class="fmt57">.io</span>} </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>		<span class="fmt19">\item</span> '<span class="fmt38">cmnd</span> + / ' comment current line  </pre>
+<pre>		<span class="fmt19">\item</span> 'p\{<span class="fmt38">TEXT\_HERE</span>\} + tab' creates p tag with text here as <span class="fmt39">text</span>  </pre>
+<pre>		<span class="fmt19">\item</span> '<span class="fmt38">lorem</span>' <span class="fmt40">creates</span> some <span class="fmt38"><span class="fmt39">lorem</span></span> text </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Tag</span><span class="fmt57"> </span><span class="fmt57">Attributes</span>} </pre>
+<pre>	To link a CSS Style sheet to <span class="fmt38">html</span> page: </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;link</span><span class="fmt24"> </span><span class="fmt24">rel="stylesheet"</span><span class="fmt24"> </span><span class="fmt24">href="main.css"></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>	Add a picture: </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;img</span><span class="fmt24"> </span><span class="fmt24">src="puppy.jpg"</span><span class="fmt24"> </span><span class="fmt24">alt="An</span><span class="fmt24"> </span><span class="fmt24">image</span><span class="fmt24"> </span><span class="fmt24">of</span><span class="fmt24"> </span><span class="fmt24">cute</span><span class="fmt24"> </span><span class="fmt24">puppy"></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>	Link to other page </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;a</span><span class="fmt24"> </span><span class="fmt24">href="http://www.google.com"</span><span class="fmt24"> </span><span class="fmt24">target="_blank">go</span><span class="fmt24"> </span><span class="fmt24">to</span><span class="fmt24"> </span><span class="fmt24">google&lt;/a></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>	 </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Absolute</span><span class="fmt57"> </span><span class="fmt57">vs</span><span class="fmt57"> </span><span class="fmt57">Relative</span><span class="fmt57"> </span><span class="fmt57">URLs</span>} </pre>
+<pre><span class="fmt20">\paragraph</span>{<span class="fmt57">Absolute</span>} </pre>
+<pre> </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>		<span class="fmt19">\item</span> Full URL </pre>
+<pre>		<span class="fmt19">\item</span> Examples: </pre>
+<pre>		<span class="fmt19">\subitem</span> '&lt;<span class="fmt38">img</span> <span class="fmt38">src</span>=<span class="fmt38">"https</span>://<span class="fmt38">pbs</span>.<span class="fmt38">twimg</span>.com/media/<span class="fmt38">DLUDtXlX</span>0<span class="fmt38">AEiCnG</span>.<span class="fmt38">jpg"</span>>' </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\paragraph</span>{<span class="fmt57">Relative</span>} </pre>
+<pre> </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>		<span class="fmt19">\item</span> Within one domain, <span class="fmt38">sshows</span> where one resource is relative to another </pre>
+<pre>		<span class="fmt19">\item</span> Examples: </pre>
+<pre>		<span class="fmt19">\subitem</span> pic/anatomy-of-an-<span class="fmt38">html-</span>element.<span class="fmt38">png</span> </pre>
+<pre>		<span class="fmt19">\subitem</span> ../pic/<span class="fmt40">anatomy-of-an-</span><span class="fmt38"><span class="fmt40">html-</span></span><span class="fmt40">element.</span><span class="fmt38">png</span> (goes up one level first by using '../')) </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Block</span><span class="fmt57"> </span><span class="fmt57">vs</span><span class="fmt57"> </span><span class="fmt57">Inline</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Block</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Will take up the width of <span class="fmt39">the</span> <span class="fmt38">parrent</span> (so will stack <span class="fmt38">verticlly</span>) </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Inline</span>}  </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Will take up only the size/space required - so will stack horizontally; hence inline. </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">HTML</span><span class="fmt18"> </span><span class="fmt18">Tags</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">HTML</span><span class="fmt57"> </span><span class="fmt57">Tags</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">div</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> "block" level element = takes up the width of <span class="fmt39">the</span> <span class="fmt38">parrent</span> (so will stack <span class="fmt38">verticlly</span>) </pre>
+<pre>	<span class="fmt19">\item</span> Generic Element </pre>
+<pre>	<span class="fmt19">\item</span> Non-semantic </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">span</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> "inline" element (stacked horizontally next to each other) </pre>
+<pre>	<span class="fmt19">\item</span> Generic <span class="fmt40">Element</span> </pre>
+<pre>	<span class="fmt19">\item</span> Non-semantic </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">a</span>} </pre>
+<pre><span class="fmt20">\paragraph</span>{<span class="fmt57">Attributes</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> '<span class="fmt38">href</span>' <span class="fmt38">urlm</span> to open when clicked </pre>
+<pre>	<span class="fmt19">\item</span> 'target' how to do it when <span class="fmt40">clicked</span> </pre>
+<pre>	<span class="fmt19">\subitem</span> '<span class="fmt38">\_blank</span>' opens <span class="fmt38">url</span> in new tab  </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt19"><span class="fmt57">\it</span></span><span class="fmt57">{</span><span class="fmt57"><span class="fmt57">q</span></span><span class="fmt57">}</span><span class="fmt57"> </span><span class="fmt57">-</span><span class="fmt57"> </span><span class="fmt57">Short</span><span class="fmt57"> </span><span class="fmt57">quote</span>} </pre>
+<pre>Short quotations that don't require paragraph breaks </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>If has the cite attribute, it only appears in the source code - user can not see it. </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt19"><span class="fmt57">\it</span></span><span class="fmt57">{</span><span class="fmt57"><span class="fmt57"><span class="fmt38">blockquote</span></span></span><span class="fmt57">}</span><span class="fmt57"> </span><span class="fmt57">-</span><span class="fmt57"> </span><span class="fmt57">long</span><span class="fmt57"> </span><span class="fmt57">quote</span>} </pre>
+<pre>Used for long quotations. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Usually rendered with the block of text indented. </pre>
+<pre>has the cite element. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt19"><span class="fmt57">\it</span></span><span class="fmt57">{</span><span class="fmt57"><span class="fmt57">cite</span></span><span class="fmt57">}</span><span class="fmt57"> </span><span class="fmt57">-</span><span class="fmt57"> </span><span class="fmt57">citing</span><span class="fmt57"> </span><span class="fmt57">an</span><span class="fmt57"> </span><span class="fmt57">author</span>} </pre>
+<pre> represents a reference to <span class="fmt39">a</span> creative work </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Must include: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Title of work   </pre>
+<pre>	<span class="fmt19">\item</span> or a <span class="fmt38">url</span> reference which may be in abbreviated form. </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt19"><span class="fmt57">\it</span></span><span class="fmt57">{</span><span class="fmt57"><span class="fmt57"><span class="fmt38">pre</span></span></span><span class="fmt57">}</span>} </pre>
+<pre>represents <span class="fmt38">preformatted</span> text - usually displayed in mono-space font as it is in the file. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Need to escape \&lt; and \> characters with <span class="fmt19"><span class="fmt38">\&amp;</span></span><span class="fmt38">lt</span> and <span class="fmt19"><span class="fmt38">\&amp;</span></span><span class="fmt38">gt</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">CSS</span><span class="fmt18"> </span><span class="fmt18">Attributes</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">CSS</span><span class="fmt57"> </span><span class="fmt57">Attributes</span>} </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">background-size</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> 'cover': covers all of the background - avoids <span class="fmt38">repeates</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">background-repeat</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> 'no-repeat': prevents <span class="fmt38"><span class="fmt40">repeates</span></span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">display</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> 'inline' - Will take up only the size/space required - so will stack horizontally; hence inline. </pre>
+<pre>	<span class="fmt19">\subitem</span> If width is set, it will have no effect (It will only take up the space required (for the content inside it)) </pre>
+<pre>	<span class="fmt19">\subitem</span> so since 'block' level elements take up the width of a parent, they cannot be nested inside 'inline' elements.  (only can have children of '<span class="fmt40">inline</span>') </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> 'block' - Will take up the width of <span class="fmt39">the</span> parent (so will stack vertically) </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> 'inline-block' - displays items inline, but leaves enough room for each element </pre>
+<pre>	<span class="fmt19">\subitem</span> can set the width and height. </pre>
+<pre>	<span class="fmt19">\subitem</span> Acts like a block as well in inline (acts like an <span class="fmt40">inline</span> block). </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> 'none' - will not be displayed </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Dimensions</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> 'width: ....' - sets the width  </pre>
+<pre>	<span class="fmt19">\item</span> 'height: ....' - sets the <span class="fmt40">height</span>  </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">div</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">width:</span><span class="fmt24"> </span><span class="fmt24">100px;</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">height:</span><span class="fmt24"> </span><span class="fmt24">100px;</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">text-align</span>} </pre>
+<pre>Sets how text should be aligned within the element. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Content</span><span class="fmt57"> </span><span class="fmt57">-</span><span class="fmt57"> </span><span class="fmt57">Padding</span><span class="fmt57"> </span><span class="fmt57">-</span><span class="fmt57"> </span><span class="fmt57">Border</span><span class="fmt57"> </span><span class="fmt57">-</span><span class="fmt57"> </span><span class="fmt57">Margin</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Content - the <span class="fmt39">content</span> itself </pre>
+<pre>	<span class="fmt19">\item</span> Padding - The Amount of <span class="fmt40">padding</span> around the <span class="fmt40">content</span> before <span class="fmt39">the</span> border </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt39">Border</span> - <span class="fmt40">Around</span> the padding of <span class="fmt39">the</span> content </pre>
+<pre>	<span class="fmt19">\item</span> Margin - The <span class="fmt39">margin</span>/<span class="fmt40">padding</span> around the border before another element can be displayed. </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">border</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> </pre>
+<pre>	<span class="fmt19">\item</span> ''border-radius: ..." - sets the radius of border </pre>
+<pre>	<span class="fmt19">\subitem</span> "...<span class="fmt19">\%</span>" - sets the radius as a percentage of the width/height </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">border:</span><span class="fmt24"> </span><span class="fmt24">1px</span><span class="fmt24"> </span><span class="fmt24">solid</span><span class="fmt24"> </span><span class="fmt24">red;</span> </pre>
+<pre><span class="fmt24">border-width:</span><span class="fmt24"> </span><span class="fmt24">1px;</span> </pre>
+<pre><span class="fmt24">border-style:</span><span class="fmt24"> </span><span class="fmt24">solid;</span> </pre>
+<pre><span class="fmt24">border-color:</span><span class="fmt24"> </span><span class="fmt24">red;</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">margin</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt38">TRBL</span> </pre>
+<pre>	<span class="fmt19">\item</span> TB RL </pre>
+<pre>	<span class="fmt19">\item</span> T R B L </pre>
+<pre>	<span class="fmt19">\item</span> "margin: 0 auto" - no padding on top or bottom, then auto set left/right so that element is on the <span class="fmt38">centre</span>. </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">box-sizing</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> "box-sizing: border-box" - sets the max size of the box/div (up-to the outside of <span class="fmt39">the</span> border) to the set dimensions via width/height.  So the border outside will stay as it is, but the content will shrink if padding is added.  If the border is width increased - it will increase inwards, shrinking the content.  <span class="fmt39">The</span> Element will not grow outwardly (grows inwards)  </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">CSS</span><span class="fmt57"> </span><span class="fmt57">Reset</span>} </pre>
+<pre>Brings the CSS formatting down to a uniform base line. </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Motivation</span>} </pre>
+<pre>Each browser has its own base CSS ('user agent style sheet'  for chrome).  So if we want to have our website uniform across all browsers, we need to apply our own. </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Aim</span>} </pre>
+<pre>To provide uniformity across browsers. </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Requirements</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Light weight </pre>
+<pre>	<span class="fmt19">\item</span> is applied to all used elements </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Solution</span>} </pre>
+<pre>Create our own style sheet to override what the browser (agent) applies. </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Alternatives</span>} </pre>
+<pre>There are some standards, e.g. <span class="fmt38">meyer</span> <span class="fmt38">css</span> reset (oldest), normalize.<span class="fmt38">css</span> (newer), sanitize.<span class="fmt38">css</span> (newest).   </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>However, some of these don't bring the formatting down to zero.  Instead they provide their own baseline <span class="fmt40">formatting</span> - overriding what the browser's <span class="fmt40">baseline</span> is. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">CSS</span><span class="fmt57"> </span><span class="fmt57">Selectors</span>} </pre>
+<pre>Different ways to select HTML elements. </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">element</span>} </pre>
+<pre>Formats that HTML element. </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">class</span>} </pre>
+<pre>Adds the 'class' attribute' to a HTML <span class="fmt40">element.</span> </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Can add them wherever and as many times <span class="fmt39">as</span> we want. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>A period before the selector is used to denote that the <span class="fmt40">selector</span> is for a class. ".example \{\}" </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">id</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Can only be used once. </pre>
+<pre>	<span class="fmt19">\item</span> Notation to denote id selector is "<span class="fmt38">\#example</span> \{\}"  </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">&lt;p</span><span class="fmt24"> </span><span class="fmt24">id="example">&lt;/p></span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">#example</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Attributes</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Only applies that selector to HTML tags which have that attribute </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">&lt;p</span><span class="fmt24"> </span><span class="fmt24">example="something">&lt;/p></span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">[example]</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Only applies that selector to HTML tags that have the exact attribute and set to that specific value  </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">&lt;p</span><span class="fmt24"> </span><span class="fmt24">example="something">&lt;/p></span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">[example=something]</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Pseudo</span><span class="fmt57"> </span><span class="fmt57">Class</span>} </pre>
+<pre>Denoted by ":" (single :)  </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Link</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">/\*</span><span class="fmt24"> </span><span class="fmt24">order</span><span class="fmt24"> </span><span class="fmt24">matters</span><span class="fmt24"> </span><span class="fmt24">*/</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">/\*</span><span class="fmt24"> </span><span class="fmt24">LVHA</span><span class="fmt24"> </span><span class="fmt24">*/</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">/\*</span><span class="fmt24"> </span><span class="fmt24">Link</span><span class="fmt24"> </span><span class="fmt24">Visited</span><span class="fmt24"> </span><span class="fmt24">Hover</span><span class="fmt24"> </span><span class="fmt24">Active</span><span class="fmt24"> </span><span class="fmt24">*/</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">a:link</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">color:</span><span class="fmt24"> </span><span class="fmt24">green;</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">}</span> </pre>
+<pre><span class="fmt24">	</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">a:visited</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">color:</span><span class="fmt24"> </span><span class="fmt24">blue;</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">}</span> </pre>
+<pre><span class="fmt24">	</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">a:hover</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">color:</span><span class="fmt24"> </span><span class="fmt24">red;</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">}</span> </pre>
+<pre><span class="fmt24">	</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">a:active</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">color:</span><span class="fmt24"> </span><span class="fmt24">yellow;</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">div:hover</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">background-color:</span><span class="fmt24"> </span><span class="fmt24">green;</span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">cursor:</span><span class="fmt24"> </span><span class="fmt24">pointer;</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>Use 'active' for links and focus for other elements such as forms. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Focus</span>} </pre>
+<pre>Used for other elements such as forms. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt35"><span class="fmt57">$</span></span><span class="fmt34"><span class="fmt57">n^{</span></span><span class="fmt34"><span class="fmt57"><span class="fmt57">th</span></span></span><span class="fmt34"><span class="fmt57">}</span></span><span class="fmt35"><span class="fmt57">$</span></span><span class="fmt57"> </span><span class="fmt57">child</span>} </pre>
+<pre>Used to select and format the nth child of a parent in HTML. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>First-Child: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">li:first-child</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>Last Child: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">li:last-child</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>To select every even child of the parent: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">li:nth-child(even)</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>To select every odd child of the parent: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">li:nth-child(odd)</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>Zebra-striping: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">table,</span><span class="fmt24"> </span><span class="fmt24">tr,</span><span class="fmt24"> </span><span class="fmt24">td</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">width:</span><span class="fmt24"> </span><span class="fmt24">100%;</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">border:</span><span class="fmt24"> </span><span class="fmt24">1px</span><span class="fmt24"> </span><span class="fmt24">solid</span><span class="fmt24"> </span><span class="fmt24">black;</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt24">tr:nth-child(even)</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">background-color:</span><span class="fmt24"> </span><span class="fmt24">rgba(128,</span><span class="fmt24"> </span><span class="fmt24">128,</span><span class="fmt24"> </span><span class="fmt24">128,</span><span class="fmt24"> </span><span class="fmt24">0.49);</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt24">tr:nth-child(odd)</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">background-color:</span><span class="fmt24"> </span><span class="fmt24">rgba(128,</span><span class="fmt24"> </span><span class="fmt24">128,</span><span class="fmt24"> </span><span class="fmt24">128,</span><span class="fmt24"> </span><span class="fmt24">0.19)</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>To select a specific child: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">li:nth-child(3)</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>To select the nth child from the bottom: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">li:nth-last-child(10)</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>To Select more complex pattern, use a linear line (mx+c) </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">li:nth-child(3n+2)</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">color:</span><span class="fmt24"> </span><span class="fmt24">red;</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt24">/\*</span> </pre>
+<pre><span class="fmt24">Try</span><span class="fmt24"> </span><span class="fmt24">changing</span><span class="fmt24"> </span><span class="fmt24">the</span><span class="fmt24"> </span><span class="fmt24">selector</span><span class="fmt24"> </span><span class="fmt24">to</span><span class="fmt24"> </span><span class="fmt24">select</span><span class="fmt24"> </span><span class="fmt24">each</span><span class="fmt24"> </span><span class="fmt24">of</span><span class="fmt24"> </span><span class="fmt24">the</span><span class="fmt24"> </span><span class="fmt24">following:</span> </pre>
+<pre><span class="fmt24">8,</span><span class="fmt24"> </span><span class="fmt24">18,</span><span class="fmt24"> </span><span class="fmt24">28,</span><span class="fmt24"> </span><span class="fmt24">38,</span><span class="fmt24"> </span><span class="fmt24">...</span><span class="fmt24"> </span><span class="fmt24">10n+8</span> </pre>
+<pre><span class="fmt24">9,</span><span class="fmt24"> </span><span class="fmt24">12,</span><span class="fmt24"> </span><span class="fmt24">15,</span><span class="fmt24"> </span><span class="fmt24">...,</span><span class="fmt24"> </span><span class="fmt24">39,</span><span class="fmt24"> </span><span class="fmt24">...</span><span class="fmt24"> </span><span class="fmt24">3n+9</span> </pre>
+<pre><span class="fmt24">3,</span><span class="fmt24"> </span><span class="fmt24">12,</span><span class="fmt24"> </span><span class="fmt24">21,</span><span class="fmt24"> </span><span class="fmt24">30,</span><span class="fmt24"> </span><span class="fmt24">39,</span><span class="fmt24"> </span><span class="fmt24">...</span><span class="fmt24"> </span><span class="fmt24">9n+3</span> </pre>
+<pre><span class="fmt24">\*/</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>To Select the a child of <span class="fmt39">a</span> parent where it is the only child:  </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>(To Select the a HTML element of a parent where the <span class="fmt40">element</span> is <span class="fmt39">the</span> only child: ) </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">article:only-child</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Pseudo</span><span class="fmt57"> </span><span class="fmt57">Element</span>} </pre>
+<pre>Denoted by "::" (Double :) </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Typography: </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">First-letter</span>} </pre>
+<pre>Selects the first letter </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">p::first-letter</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">font-family:</span><span class="fmt24"> </span><span class="fmt24">cursive;</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">font-size:</span><span class="fmt24"> </span><span class="fmt24">36px;</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">line-height:</span><span class="fmt24"> </span><span class="fmt24">.5;</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">First-line</span>} </pre>
+<pre>Dynamically selects the first line (<span class="fmt40">dynamically</span> adapts/reforms depending on width of view port) </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">p::first-line</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">color:</span><span class="fmt24"> </span><span class="fmt24">red;</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">font-weight:</span><span class="fmt24"> </span><span class="fmt24">900;</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Nested</span><span class="fmt57"> </span><span class="fmt57">Selectors</span>} </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">all-children</span>} </pre>
+<pre>Selects all children of a parent = <span class="fmt39">"parent</span> child \{\}".  No matter how nested  </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">parent</span><span class="fmt24"> </span><span class="fmt24">child</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>To select all children of a 'div' which are 'p' elements  </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">div</span><span class="fmt24"> </span><span class="fmt24">p</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>will select all 'p' tags in the following case </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">&lt;!--div>p*2+section>p^^p--></span> </pre>
+<pre><span class="fmt24">&lt;div></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;p>first</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24">   </span><span class="fmt24">&lt;-</span><span class="fmt24"> </span><span class="fmt24">selected</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;p>second</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24">  </span><span class="fmt24">&lt;-</span><span class="fmt24"> </span><span class="fmt24">selected</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;section></span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">&lt;p>third</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24"> </span><span class="fmt24">&lt;-</span><span class="fmt24"> </span><span class="fmt24">selected</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;/section></span> </pre>
+<pre><span class="fmt24">&lt;/div></span> </pre>
+<pre><span class="fmt24">&lt;p>fourth</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span> </pre>
+<pre><span class="fmt24">&lt;p>fifth</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span> </pre>
+<pre><span class="fmt24">&lt;p>sixth</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">immediate</span>} </pre>
+<pre>To select all the immediate children of a 'div' which are 'p' elements  </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">div</span><span class="fmt24"> </span><span class="fmt24">></span><span class="fmt24"> </span><span class="fmt24">p</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>will select all 'p' tags except the ones that are not immediate descendants of a 'div' so only 'first p' and 'second <span class="fmt39">p</span>' will be selected in the following case </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">&lt;!--div>p*2+section>p^^p--></span> </pre>
+<pre><span class="fmt24">&lt;div></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;p>first</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24">      </span><span class="fmt24">&lt;-</span><span class="fmt24"> </span><span class="fmt24">selected</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;p>second</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24">     </span><span class="fmt24">&lt;-</span><span class="fmt24"> </span><span class="fmt24">selected</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;section></span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">&lt;p>third</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;/section></span> </pre>
+<pre><span class="fmt24">&lt;/div></span> </pre>
+<pre><span class="fmt24">&lt;p>fourth</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span> </pre>
+<pre><span class="fmt24">&lt;p>fifth</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span> </pre>
+<pre><span class="fmt24">&lt;p>sixth</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">all-siblings</span>} </pre>
+<pre>All 'p' tags that are siblings of a 'div' </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">div</span><span class="fmt24"> </span><span class="fmt24">~</span><span class="fmt24"> </span><span class="fmt24">p</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>will select ....... 'p' tags in the following case </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">&lt;!--div>p*2+section>p^^p--></span> </pre>
+<pre><span class="fmt24">&lt;div></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;p>first</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;p>second</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24">  </span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;section></span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">&lt;p>third</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;/section></span> </pre>
+<pre><span class="fmt24">&lt;/div></span> </pre>
+<pre><span class="fmt24">&lt;p>fourth</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24"> </span><span class="fmt24">&lt;-</span><span class="fmt24"> </span><span class="fmt24">selected</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">&lt;p>fifth</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24">  </span><span class="fmt24">&lt;-</span><span class="fmt24"> </span><span class="fmt24">selected</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">&lt;p>sixth</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24">  </span><span class="fmt24">&lt;-</span><span class="fmt24"> </span><span class="fmt24">selected</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Immediate</span><span class="fmt57"> </span><span class="fmt57">Siblings</span>} </pre>
+<pre>will select the tag that is immediately after the tag - only the immediate sibling. </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">div</span><span class="fmt24"> </span><span class="fmt24">+</span><span class="fmt24"> </span><span class="fmt24">p</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>will select only the 'fourth p' '<span class="fmt39">p</span>' tag in the following case </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">&lt;!--div>p*2+section>p^^p--></span> </pre>
+<pre><span class="fmt24">&lt;div></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;p>first</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;p>second</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24">  </span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;section></span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">&lt;p>third</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;/section></span> </pre>
+<pre><span class="fmt24">&lt;/div></span> </pre>
+<pre><span class="fmt24">&lt;p>fourth</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24"> </span><span class="fmt24">&lt;-</span><span class="fmt24"> </span><span class="fmt24">selected</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">&lt;p>fifth</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24">  </span> </pre>
+<pre><span class="fmt24">&lt;p>sixth</span><span class="fmt24"> </span><span class="fmt24">p&lt;/p></span><span class="fmt24">  </span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Compound</span><span class="fmt57"> </span><span class="fmt57">Selectors</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">ul#some-id</span><span class="fmt24"> </span><span class="fmt24">li.some-class</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>Will select an 'li' with the class '<span class="fmt40">some-class</span>' which is a child of <span class="fmt39">a</span> 'ul' with an id 'some-id'. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">CSS</span><span class="fmt57"> </span><span class="fmt57">Specificity</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Element selector = 1  </pre>
+<pre>	<span class="fmt19">\item</span> Class = 10 </pre>
+<pre>	<span class="fmt19">\item</span> ID = 100 </pre>
+<pre>	<span class="fmt19">\item</span> Inline = 1000  </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>If same specificity, go to the order that rule sets are declared in the CSS.  Last = More powerful. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">center</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">tabular</span></span><span class="fmt20">}</span>{| c | c | c |}  </pre>
+<pre>		<span class="fmt19">\hline</span> </pre>
+<pre>		Selector Type  <span class="fmt23">&amp;</span> Value <span class="fmt23">&amp;</span> Place  <span class="fmt19">\\</span> [0.5ex]  </pre>
+<pre>		<span class="fmt19">\hline</span> </pre>
+<pre>		Element  <span class="fmt23">&amp;</span> 1 <span class="fmt23">&amp;</span> 0-0-1 <span class="fmt19">\\</span>  </pre>
+<pre>		 </pre>
+<pre>		Class/attribute <span class="fmt23">&amp;</span>  10 <span class="fmt23">&amp;</span> 0-1-0 <span class="fmt19">\\</span> </pre>
+<pre>		 </pre>
+<pre>		ID <span class="fmt23">&amp;</span> 100 <span class="fmt23">&amp;</span> 1-0-0 <span class="fmt19">\\</span> </pre>
+<pre>		 </pre>
+<pre>		Inline <span class="fmt23">&amp;</span> 1000 <span class="fmt23">&amp;</span>1-0-0-0 <span class="fmt19">\\</span>[1ex]  </pre>
+<pre>		<span class="fmt19">\hline</span> </pre>
+<pre>	<span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">tabular</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">center</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Example</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">ul#some-id</span><span class="fmt24"> </span><span class="fmt24">li.some-class</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>The first section </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">ul#some-id</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>has a specificity of 101 (1 from ul (element selector) 100 from '<span class="fmt38">\#some-</span>id' (id <span class="fmt40">selector</span>))  </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>The Second section </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">li.some-class</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>has a specificity of 11 </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>So the total <span class="fmt40">specificity</span> is 112. </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">Formatting</span><span class="fmt18"> </span><span class="fmt18">Text</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Formatting</span><span class="fmt57"> </span><span class="fmt57">Text</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Font</span><span class="fmt57"> </span><span class="fmt57">property</span>} </pre>
+<pre>A short-hand property. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Best not to use the short hand <span class="fmt40">property</span> version when starting off.  Ensure you understand the individual properties, then use the short hand property. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Font-family</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> set specific fonts first, but may fail if they are not installed or cannot be <span class="fmt40">installed.</span>  So best to state a generic font family, such as sans-serif, at the end to select any font that the person has of that family.  This is called fallback. </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\paragraph</span>{<span class="fmt57">Sans-serif</span>} <span class="fmt39">is</span> as the best font to use on the web. (<span class="fmt39">the</span> de-<span class="fmt38">facto</span> standard).  It's the most readable on the web. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">font-size</span>} </pre>
+<pre>Default is usually set to 16px. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Font size values: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> xx-small, x-small, small, medium, large, x-large, xx-large </pre>
+<pre>	<span class="fmt19">\subitem</span> relative to default font size ( root font size ). </pre>
+<pre>	<span class="fmt19">\subitem</span> <span class="fmt40">default</span> font size is usually medium. </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> larger, smaller  </pre>
+<pre>	<span class="fmt19">\subitem</span> relative to the parent's font size. </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> rem  </pre>
+<pre>	<span class="fmt19">\subitem</span> relative to default font size ( root font size ). </pre>
+<pre>	<span class="fmt19">\subitem</span> will scale fonts proportionally to the default font size (usually 16px but normally adjusted for accessibility issues). </pre>
+<pre>	<span class="fmt19">\subitem</span> originates from how wide the letter 'm' is on a printing press. </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> vw - <span class="fmt38">viewport</span> width  </pre>
+<pre>	<span class="fmt19">\subitem</span> 1/100th of the width <span class="fmt39">of</span> <span class="fmt39">the</span> <span class="fmt38"><span class="fmt40">viewport</span></span><span class="fmt40">.</span> </pre>
+<pre>	<span class="fmt19">\subitem</span> Useful if you want to have a banner across the page  </pre>
+<pre>	<span class="fmt19">\subitem</span> Will scale dynamically as the width of <span class="fmt39">the</span> page changes. </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> vh - <span class="fmt38">viewport</span> height </pre>
+<pre>	<span class="fmt19">\subitem</span> 1/100th of the <span class="fmt40">height</span> <span class="fmt39">of</span> <span class="fmt39">the</span> <span class="fmt38"><span class="fmt40">viewport</span></span><span class="fmt40">.</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">font-weight</span>} </pre>
+<pre>Can take the values: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> normal </pre>
+<pre>	<span class="fmt19">\subitem</span> same as 400 </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> bold </pre>
+<pre>	<span class="fmt19">\subitem</span> same as 700 </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> lighter </pre>
+<pre>	<span class="fmt19">\item</span> bolder </pre>
+<pre>	<span class="fmt19">\item</span> 100, 200, 300, 400, 500, 600, 700, 800, 900 </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">font-style</span>} </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">font-variant</span>} </pre>
+<pre>Is a sort hand for five longhand font related properties: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> font-variant-caps </pre>
+<pre>	<span class="fmt19">\item</span> font-variant-numeric </pre>
+<pre>	<span class="fmt19">\item</span> font-variant-alternates </pre>
+<pre>	<span class="fmt19">\item</span> font-variant-ligatures </pre>
+<pre>	<span class="fmt19">\item</span> font-variant-east-<span class="fmt38">asian</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>Values: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> 'small-caps' - kind of looks good </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">line-height</span>} </pre>
+<pre>Letting </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Adjusts the vertical distance between each line box.  <span class="fmt39">Each</span> <span class="fmt39">line</span> of text is contained within a box.  This property adjusts the vertical distance between each of these line boxes. </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>Can be used to <span class="fmt38">centre</span> things, however, it is more of a hack method.  This is completed by setting the line-height to <span class="fmt39">the</span> same value of the height <span class="fmt39">of</span> <span class="fmt39">the</span> div that <span class="fmt39">the</span> text is a child of. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">letting-spacing</span>} </pre>
+<pre><span class="fmt38">Kerning</span> </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Can take the values: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> normal </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt35">$</span><span class="fmt34">&lt;</span><span class="fmt35">$</span>length<span class="fmt35">$</span><span class="fmt34">></span><span class="fmt35">$</span>  CSS Data type  </pre>
+<pre>	<span class="fmt19">\subitem</span> Should really just stick to 'rem'.  Can use 'px' if you really want to. </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">word-spacing</span>} </pre>
+<pre>Can take the values: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> normal </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt35">$</span><span class="fmt34">&lt;</span><span class="fmt35">$</span>length<span class="fmt35">$</span><span class="fmt34">></span><span class="fmt35">$</span>  CSS Data type  </pre>
+<pre>	<span class="fmt19">\subitem</span> Should really just stick to 'rem'.  Can use 'px' if you really want to. </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> percentage (not a CSS length data type) </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">color</span>} </pre>
+<pre>Is a CSS Data type. Can either be a keyword with <span class="fmt39">a</span> hexadecimal number associated with it.  Or a pure <span class="fmt40">hexadecimal</span> <span class="fmt40">number</span> can be used - a <span class="fmt38">RGB</span> value (<span class="fmt38">RGBA</span>).  Each of the red, green, and blue (<span class="fmt39">and</span> alpha) values are represented by two digits (up to 255). </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Google</span><span class="fmt57"> </span><span class="fmt57">Fonts</span>} </pre>
+<pre>Recommended to choose/sort by popularity so that there will be a high chance that <span class="fmt39">that</span> font is already been downloaded onto the user's/client's machine.  This will reduce the data needed to be transferred, so will speed up the web page load time. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Should monitor the weight (<span class="fmt39">the</span> size of <span class="fmt39">the</span> files that you are sending/using) </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">text</span>}  </pre>
+<pre>Now we have got the font, let us now form the text.  Such as indenting, underlining, and applying shadow effects. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">text-transform</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> 'uppercase' - sets all selected text to <span class="fmt40">uppercase.</span> </pre>
+<pre>	<span class="fmt19">\item</span> '<span class="fmt38">capitalise</span>' - sets the first letter of each word to a capital/uppercase. </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">text-align</span>} </pre>
+<pre>Describes how  content like text is aligned in its parent block element. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Does not control the alignment of block elements, only their inline content. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">text-shadow</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> accepts a comma-separated list: x, y, blur radius, color  </pre>
+<pre>	<span class="fmt19">\subitem</span> offset-x | offset-y | blur-radius | color </pre>
+<pre>	<span class="fmt19">\subitem</span> text-shadow: 1px 1<span class="fmt39">px</span> 2<span class="fmt39">px</span> black; </pre>
+<pre>	 </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">text-decoration</span>} </pre>
+<pre><span class="fmt20">\paragraph</span>{<span class="fmt57">text-decoration-line</span>} </pre>
+<pre>Adds/removes underline, <span class="fmt38">overline</span>, and strike through. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Therefore, is commonly used to remove the underline from hyperlinks (anchor tags). </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Takes the values which any number of them can be used at once: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> none </pre>
+<pre>	<span class="fmt19">\item</span> underline </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt38">overline</span> </pre>
+<pre>	<span class="fmt19">\item</span> line-through </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>But use text-decoration instead - does not work otherwise?????????? </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>Do NOT use '<span class="fmt35">$</span><span class="fmt34">&lt;</span><span class="fmt35">$</span>s<span class="fmt35">$</span><span class="fmt34">></span><span class="fmt35">$</span>' tag in HTML, use the text-decoration-line element in CSS to achieve the same effect. </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>Do NOT use '<span class="fmt35">$</span><span class="fmt34">&lt;</span><span class="fmt35">$</span><span class="fmt38">del</span><span class="fmt35">$</span><span class="fmt34">></span><span class="fmt35">$</span>' tag in HTML.  Used to be <span class="fmt39">used</span> <span class="fmt39">to</span> denote that <span class="fmt39">that</span> text had been deleted.  If you want something <span class="fmt40">deleted</span>, just delete it from the page.  Or if you still want to have the same effect use the CSS property, 'text-decoration-line'. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">text-indentation</span>} </pre>
+<pre>Sets how indented e.g. the first line is of a 'p' tag. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>recommended to use 'rem' length units.   </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt35">$</span><span class="fmt34">&lt;</span><span class="fmt35">$</span><span class="fmt39">length</span><span class="fmt35">$</span><span class="fmt34">></span><span class="fmt35">$</span> CSS data type </pre>
+<pre>	<span class="fmt19">\item</span> percentage </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>The text-indent property specifies the amount of indentation (empty space) should be left before lines of text in a block. By default, this controls the indentation of only the first formatted line of the block, but the hanging and each-line keywords can be used to change this <span class="fmt38">behaviour</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">max-width</span>} </pre>
+<pre>Sets the maximum width an element can be.  Enables it to be smaller than that, so can be useful for adaptations <span class="fmt39">for</span> smaller screens. </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">Document</span><span class="fmt18"> </span><span class="fmt18">Structure</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Document</span><span class="fmt57"> </span><span class="fmt57">Structure</span>} </pre>
+<pre>Importance of Good document structure: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> maintainability </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>Important terms: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt40">Document</span> Object Model (<span class="fmt38">DOM</span>) </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> Document Flow </pre>
+<pre>	<span class="fmt19">\subitem</span> Since every element is a box, this is how these boxes naturally stack/flow. </pre>
+<pre>	<span class="fmt19">\subitem</span> So Block level elements will stack taking up the entire width/row from top to bottom. </pre>
+<pre>	<span class="fmt19">\subitem</span> So inline elements will stack next to each other. </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">HTML5</span><span class="fmt57"> </span><span class="fmt57">Outline</span><span class="fmt57"> </span><span class="fmt57">Algorithm</span>} </pre>
+<pre>DO NOT use </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Even though it is in the specification, no one has implemented it since <span class="fmt39">it</span> was too complicated. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>However, do outline your documents using the heading tags (h1 through <span class="fmt39">h</span>6). </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Semantic</span><span class="fmt57"> </span><span class="fmt57">HTML</span>} </pre>
+<pre>Non-semantic: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> div </pre>
+<pre>	<span class="fmt19">\item</span> span </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>Semantic: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> header </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt38">nav</span> </pre>
+<pre>	<span class="fmt19">\item</span> main </pre>
+<pre>	<span class="fmt19">\item</span> article </pre>
+<pre>	<span class="fmt19">\item</span> section </pre>
+<pre>	<span class="fmt19">\item</span> aside </pre>
+<pre>	<span class="fmt19">\item</span> footer </pre>
+<pre>	<span class="fmt19">\item</span> h1 - <span class="fmt39">h</span>6 </pre>
+<pre>	<span class="fmt19">\item</span> figure </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt38">figcaption</span> </pre>
+<pre>	<span class="fmt19">\item</span> address </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">article</span>} </pre>
+<pre>Needs to be self contained.   </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Should be able to cut it out and <span class="fmt39">it</span> would still make sense. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>On the other hand, each part????? of the article will not stand on its own - needs the rest of <span class="fmt39">the</span> article to make sense. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>An <span class="fmt40">article</span> has sections. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Section</span>} </pre>
+<pre>Like an article but does not need to be able <span class="fmt39">to</span> stand on its own. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>See article for good example on <span class="fmt38">MDN</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">&lt;article</span><span class="fmt24"> </span><span class="fmt24">class="film_review"></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;header></span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">&lt;h2>Jurassic</span><span class="fmt24"> </span><span class="fmt24">Park&lt;/h2></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;/header></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;section</span><span class="fmt24"> </span><span class="fmt24">class="main_review"></span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">&lt;p>Dinos</span><span class="fmt24"> </span><span class="fmt24">were</span><span class="fmt24"> </span><span class="fmt24">great!&lt;/p></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;/section></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;section</span><span class="fmt24"> </span><span class="fmt24">class="user_reviews"></span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">&lt;article</span><span class="fmt24"> </span><span class="fmt24">class="user_review"></span> </pre>
+<pre><span class="fmt24">			</span><span class="fmt24">&lt;p>Way</span><span class="fmt24"> </span><span class="fmt24">too</span><span class="fmt24"> </span><span class="fmt24">scary</span><span class="fmt24"> </span><span class="fmt24">for</span><span class="fmt24"> </span><span class="fmt24">me.&lt;/p></span> </pre>
+<pre><span class="fmt24">			</span><span class="fmt24">&lt;footer></span> </pre>
+<pre><span class="fmt24">				</span><span class="fmt24">&lt;p></span> </pre>
+<pre><span class="fmt24">					</span><span class="fmt24">Posted</span><span class="fmt24"> </span><span class="fmt24">on</span> </pre>
+<pre><span class="fmt24">					</span><span class="fmt24">&lt;time</span><span class="fmt24"> </span><span class="fmt24">datetime="2015-05-16</span><span class="fmt24"> </span><span class="fmt24">19:00">May</span><span class="fmt24"> </span><span class="fmt24">16&lt;/time></span> </pre>
+<pre><span class="fmt24">					</span><span class="fmt24">by</span><span class="fmt24"> </span><span class="fmt24">Lisa.</span> </pre>
+<pre><span class="fmt24">				</span><span class="fmt24">&lt;/p></span> </pre>
+<pre><span class="fmt24">			</span><span class="fmt24">&lt;/footer></span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">&lt;/article></span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">&lt;article</span><span class="fmt24"> </span><span class="fmt24">class="user_review"></span> </pre>
+<pre><span class="fmt24">			</span><span class="fmt24">&lt;p>I</span><span class="fmt24"> </span><span class="fmt24">agree,</span><span class="fmt24"> </span><span class="fmt24">dinos</span><span class="fmt24"> </span><span class="fmt24">are</span><span class="fmt24"> </span><span class="fmt24">my</span><span class="fmt24"> </span><span class="fmt24">favorite.&lt;/p></span> </pre>
+<pre><span class="fmt24">			</span><span class="fmt24">&lt;footer></span> </pre>
+<pre><span class="fmt24">				</span><span class="fmt24">&lt;p></span> </pre>
+<pre><span class="fmt24">					</span><span class="fmt24">Posted</span><span class="fmt24"> </span><span class="fmt24">on</span> </pre>
+<pre><span class="fmt24">					</span><span class="fmt24">&lt;time</span><span class="fmt24"> </span><span class="fmt24">datetime="2015-05-17</span><span class="fmt24"> </span><span class="fmt24">19:00">May</span><span class="fmt24"> </span><span class="fmt24">17&lt;/time></span> </pre>
+<pre><span class="fmt24">					</span><span class="fmt24">by</span><span class="fmt24"> </span><span class="fmt24">Tom.</span> </pre>
+<pre><span class="fmt24">				</span><span class="fmt24">&lt;/p></span> </pre>
+<pre><span class="fmt24">			</span><span class="fmt24">&lt;/footer></span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">&lt;/article></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;/section></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;footer></span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">&lt;p></span> </pre>
+<pre><span class="fmt24">			</span><span class="fmt24">Posted</span><span class="fmt24"> </span><span class="fmt24">on</span> </pre>
+<pre><span class="fmt24">			</span><span class="fmt24">&lt;time</span><span class="fmt24"> </span><span class="fmt24">datetime="2015-05-15</span><span class="fmt24"> </span><span class="fmt24">19:00">May</span><span class="fmt24"> </span><span class="fmt24">15&lt;/time></span> </pre>
+<pre><span class="fmt24">			</span><span class="fmt24">by</span><span class="fmt24"> </span><span class="fmt24">Staff.</span> </pre>
+<pre><span class="fmt24">		</span><span class="fmt24">&lt;/p></span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&lt;/footer></span> </pre>
+<pre><span class="fmt24">&lt;/article></span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">header</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> a group of “introductory content” or “navigational aids” </pre>
+<pre>	<span class="fmt19">\subitem</span> may contain some heading elements but also other <span class="fmt40">elements</span> like a logo </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> commonly has a heading (hn tag) </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> must not be a <span class="fmt38">descendent</span> of  </pre>
+<pre>	<span class="fmt19">\subitem</span> header </pre>
+<pre>	<span class="fmt19">\subitem</span> footer </pre>
+<pre>	<span class="fmt19">\subitem</span> address </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57"><span class="fmt38">nav</span></span>} </pre>
+<pre>Is a section with navigation links </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> not all <span class="fmt39">links</span> within a document must be in a <span class="fmt38">nav</span> element </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> It is intended for the major block of links </pre>
+<pre>	<span class="fmt19">\subitem</span> such as the main navigation of the page/website </pre>
+<pre>	<span class="fmt19">\subitem</span> Helps to be categorized by search engines </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> “it is common for footers to have a list of links to various key parts of a site, but the footer element is more appropriate in such cases, and no <span class="fmt38">nav</span> element is necessary for those links.” (<span class="fmt38">src</span>: W3) </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> a document may have several <span class="fmt38">nav</span> elements, for example, one for site navigation and one for <span class="fmt38">intra-</span>page <span class="fmt40">navigation.</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">main</span>} </pre>
+<pre>the main content of the &lt;body> <span class="fmt39">of</span> a document or application. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Should be unique to that page. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>There <span class="fmt40">should</span> only be one main tag per page. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">aside</span>} </pre>
+<pre>Content related to something. </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>Description: </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>The HTML <span class="fmt35">$</span><span class="fmt34">&lt;</span><span class="fmt35">$</span>aside<span class="fmt35">$</span><span class="fmt34">></span><span class="fmt35">$</span> element represents a section of the page with content connected tangentially to the rest, which could be considered separate from that content. These sections are often represented as sidebars or inserts. They often contain the definitions on <span class="fmt39">the</span> <span class="fmt40">sidebars</span>, such as <span class="fmt40">definitions</span> from the glossary; there may also be other types of information, such as related advertisements; the biography of <span class="fmt39">the</span> author; web applications; profile information or related links on the blog. (<span class="fmt38">MDN</span>) </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>Examples: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> sidebars </pre>
+<pre>	<span class="fmt19">\item</span> inserts </pre>
+<pre>	<span class="fmt19">\item</span> advertisements </pre>
+<pre>	<span class="fmt19">\item</span> biography of the author </pre>
+<pre>	<span class="fmt19">\item</span> related links on the blog </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">footer</span>} </pre>
+<pre>Description: </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>The HTML <span class="fmt35">$</span><span class="fmt34">&lt;</span><span class="fmt35">$</span>footer<span class="fmt35">$</span><span class="fmt34">></span><span class="fmt35">$</span> element represents a <span class="fmt40">footer</span> for its nearest sectioning content or <span class="fmt39">sectioning</span> root element. A footer typically contains information about the author of <span class="fmt39">the</span> section, copyright data or links to related documents. </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>Usage notes: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Enclose information about the author in an &lt;address> element that can be included into the &lt;footer> <span class="fmt40">element</span>  </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>Examples: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> information about the author of <span class="fmt39">the</span> section </pre>
+<pre>	<span class="fmt19">\item</span> copyright data </pre>
+<pre>	<span class="fmt19">\item</span> links to related documents </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">figure</span><span class="fmt57"> </span><span class="fmt57">and</span><span class="fmt57"> </span><span class="fmt57"><span class="fmt38">figcaption</span></span>} </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">figure</span>} </pre>
+<pre>Self-contained content, frequently with a &lt;<span class="fmt38">figcaption</span>> </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>While it is related to the main flow, its position is independent of the main flow; it could be moved to another page or an appendix without affecting the main flow.  </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Typically referenced as a single unit </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Examples: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> image </pre>
+<pre>	<span class="fmt19">\item</span> illustration </pre>
+<pre>	<span class="fmt19">\item</span> diagram </pre>
+<pre>	<span class="fmt19">\item</span> code snippet </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57"><span class="fmt38">figcaption</span></span>} </pre>
+<pre>Used as the caption within a figure. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>It can only be the first or last element in the <span class="fmt35">$</span><span class="fmt34">&lt;</span><span class="fmt35">$</span>figure<span class="fmt35">$</span><span class="fmt34">></span><span class="fmt35">$</span> block. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>It is optional.  A <span class="fmt35">$</span><span class="fmt34">&lt;</span><span class="fmt35">$</span><span class="fmt40">figure</span><span class="fmt35">$</span><span class="fmt34">></span><span class="fmt35">$</span> does not a caption.  However, a <span class="fmt35">$</span><span class="fmt34">&lt;</span><span class="fmt35">$</span><span class="fmt38">figcaption</span><span class="fmt35">$</span><span class="fmt34">></span><span class="fmt35">$</span> requires <span class="fmt39">a</span> <span class="fmt35">$</span><span class="fmt34">&lt;</span><span class="fmt35">$</span>figure<span class="fmt35">$</span><span class="fmt34">></span><span class="fmt35">$</span>. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Address</span>} </pre>
+<pre>Wraps the contact information of that element. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Includes at the end of a body  </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">Flexbox</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57"><span class="fmt38">Flexbox</span></span>} </pre>
+<pre>Search CSS tricks <span class="fmt38">flexbox</span> for the best resource - <span class="fmt38">https</span>://<span class="fmt38">css-</span>tricks.com/snippets/<span class="fmt38">css</span>/a-guide-to-<span class="fmt38">flexbox</span>/ </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>The standard currently, with ~94<span class="fmt19">\%</span> compatibility. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>There is a flex container.  The immediate children of this element, are called flex items. </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>Check out: <span class="fmt38">https</span>://<span class="fmt38">flexboxfroggy</span>.com/ </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">The</span><span class="fmt57"> </span><span class="fmt57">Thought</span><span class="fmt57"> </span><span class="fmt57">behind</span><span class="fmt57"> </span><span class="fmt57"><span class="fmt38">Flexbox</span></span>} </pre>
+<pre>You should think in terms of containers to layout the page.  Once <span class="fmt39">the</span> <span class="fmt39">page</span> has been separated into containers, you can start to make <span class="fmt40">containers</span> 'flex <span class="fmt39">containers</span>' as necessary, and arrange the children as 'flex items'.   </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>This opens another whole world of layout opportunities. </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>Flex items can only be immediate children of the flex container. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Container</span><span class="fmt57"> </span><span class="fmt57">Properties</span>} </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">display</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> flex </pre>
+<pre>	<span class="fmt19">\item</span> inline-flex </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">flex-wrap</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt38">Nowrap</span> (default) </pre>
+<pre>	<span class="fmt19">\item</span> Wrap </pre>
+<pre>	<span class="fmt19">\item</span> Wrap-reverse </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">flex-direction</span>} </pre>
+<pre>Allows us to dictate which direction the flex items are laid out. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Possible values: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Row (default) </pre>
+<pre>	<span class="fmt19">\item</span> Row-reverse </pre>
+<pre>	<span class="fmt19">\item</span> Column </pre>
+<pre>	<span class="fmt19">\item</span> Column-reverse </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>Primary Axis:<span class="fmt19">\\</span> </pre>
+<pre> - The axis which is parallel to flex-direction’s value.<span class="fmt19">\\</span> </pre>
+<pre> - Whatever your flex-direction is set to, that is your primary axis. </pre>
+<pre> <span class="fmt19">\\</span> </pre>
+<pre>Cross <span class="fmt39">axis</span>:<span class="fmt19">\\</span> </pre>
+<pre> - The axis which is perpendicular to the primary axis </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">flex-flow</span>} </pre>
+<pre>Is a short-hand property for 'flex-direction' and 'flex-wrap'. </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">justify-content</span>} </pre>
+<pre>'justify-content' moves/aligns items along the main/primary axis (as discussed in 'flex-direction'). </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Possible values: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Flex-start </pre>
+<pre>	<span class="fmt19">\item</span> Flex-end </pre>
+<pre>	<span class="fmt19">\item</span> Center </pre>
+<pre>	<span class="fmt19">\item</span> Space-between </pre>
+<pre>	<span class="fmt19">\item</span> Space-around </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">align-content</span>} </pre>
+<pre>Aligns content in the cross axis when there is space to do so.  </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Shifts all of the content items together (not with respect to each row (along the primary/main axis)) </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Shifts the lines  </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>e.g. flex-start = will shift all lines packed at the top of <span class="fmt39">the</span> container. </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">.container</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">align-content:</span><span class="fmt24"> </span><span class="fmt24">flex-start</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">flex-end</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">center</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">space-between</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">space-around</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">stretch;</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">align-items</span>} </pre>
+<pre>Moves the items along <span class="fmt39">the</span> cross axis according to the possible values: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Flex-start </pre>
+<pre>	<span class="fmt19">\item</span> Flex-end </pre>
+<pre>	<span class="fmt19">\item</span> Center </pre>
+<pre>	<span class="fmt19">\item</span> Stretch </pre>
+<pre>	<span class="fmt19">\item</span> Baseline </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>Moves the items relative to their row (remains inside their row) whereas align-content aligns all of the content/items - also moves the lines/columns. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>align-content moves the entire group/line. </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">.container</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">align-items:</span><span class="fmt24"> </span><span class="fmt24">stretch</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">flex-start</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">flex-end</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">center</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">baseline;</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%</span><span class="fmt18"> </span><span class="fmt18">Item</span><span class="fmt18"> </span><span class="fmt18">Properties</span> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Item</span><span class="fmt57"> </span><span class="fmt57">Properties</span>} </pre>
+<pre>Flex properties that can be applied to individual items inside of the flex container.   </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>CSS properties of the actual item. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">align-self</span>} </pre>
+<pre>Applies align properties solely on individual flex items, irrelevant to the alignment set by/on the flex container. </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">.item</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">align-self:</span><span class="fmt24"> </span><span class="fmt24">auto</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">flex-start</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">flex-end</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">center</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">baseline</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">stretch;</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">order</span>} </pre>
+<pre>States what order that item will be displayed. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>If it does not have an order value, it will be displayed after the items that do.   </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre><span class="fmt39">Items</span> with the 'order' property set, will be displayed first. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Can use negatives. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Items can have the same order value.  But will be ordered along with the other <span class="fmt40">ordered</span> items, but ones with the same will be displayed in the order that they are declared in.  (But will be ordered in the order that they are declared in the HTML source code). </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">.item</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">order:</span><span class="fmt24"> </span><span class="fmt24">&lt;integer>;</span><span class="fmt24"> </span><span class="fmt24">(default</span><span class="fmt24"> </span><span class="fmt24">is</span><span class="fmt24"> </span><span class="fmt24">0)</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">flex-grow</span>} </pre>
+<pre>A value given to a flex item that decides what fraction of space it should occupy (Similar to how potential difference is split according resistance). </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Default value 0 - should will not grow to fill the space. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Negative values are not valid. </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">.item</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">flex-grow:</span><span class="fmt24"> </span><span class="fmt24">&lt;number>;</span><span class="fmt24">  </span><span class="fmt24">(default</span><span class="fmt24"> </span><span class="fmt24">0)</span><span class="fmt24"> </span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">flex-shrink</span>} </pre>
+<pre>A value which dictates/enables how the item shrinks when required. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Value is the fraction of <span class="fmt39">the</span> shrinkage that <span class="fmt39">that</span> item will experience. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>So 3 items, 2 with value 1 and 1 <span class="fmt39">with</span> <span class="fmt39">value</span> 2 - The <span class="fmt39">value</span> 2 will receive <span class="fmt35">$</span><span class="fmt21">\frac</span><span class="fmt34">{1}{2}</span><span class="fmt35">$</span> of the shrinkage and <span class="fmt39">the</span> other 2 will <span class="fmt40">receive</span> <span class="fmt35">$</span><span class="fmt21">\frac</span><span class="fmt34">{1}{4}</span><span class="fmt35">$</span>.  So value 2 will shrink twice as fast <span class="fmt39">as</span> the other two. </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>0 if it doesn't shrink, <span class="fmt19">\\</span> </pre>
+<pre>not 0 if it does <span class="fmt40">shrink</span> and by how much compared to the other items. </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">.item</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">flex-shrink:</span><span class="fmt24"> </span><span class="fmt24">&lt;number>;</span><span class="fmt24"> </span><span class="fmt24">(default</span><span class="fmt24"> </span><span class="fmt24">1)</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">flex-basis</span>} </pre>
+<pre>The value that 'flex-shrink' and 'flex-grow' kicks in. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>If set at a percentage, since the basis will always change along with the value of <span class="fmt39">the</span> parent, shrink and grow will never kick in. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">flex</span>} </pre>
+<pre>A short-hand property for: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> flex-basis </pre>
+<pre>	<span class="fmt19">\item</span> flex-shrink </pre>
+<pre>	<span class="fmt19">\item</span> flex-grow </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>with the second and third parameters optional. </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">.item</span><span class="fmt24"> </span><span class="fmt24">{</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">flex:</span><span class="fmt24"> </span><span class="fmt24">none</span><span class="fmt24"> </span><span class="fmt24">|</span><span class="fmt24"> </span><span class="fmt24">[</span><span class="fmt24"> </span><span class="fmt24">&lt;'flex-grow'></span><span class="fmt24"> </span><span class="fmt24">&lt;'flex-shrink'>?</span><span class="fmt24"> </span><span class="fmt24">||</span><span class="fmt24"> </span><span class="fmt24">&lt;'flex-basis'></span><span class="fmt24"> </span><span class="fmt24">]</span> </pre>
+<pre><span class="fmt24">}</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>Recommended to use instead of individual properties. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Will set the other values, that are not set, intelligently. </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">Media</span><span class="fmt18"> </span><span class="fmt18">Queries</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Media</span><span class="fmt57"> </span><span class="fmt57">Queries</span>} </pre>
+<pre>Allows us to apply different CSS depending on the <span class="fmt38">viewport</span> size. e.g. for phone, tablet, desktop... </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Considerations</span>} </pre>
+<pre> - Best to use separate files for different media queries. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre> - Start by developing for mobile size first to keep it as light weight <span class="fmt39">as</span> possible.   Then we can scale up to desktop and add more to the page (will take up more data) aka - Mobile First Design.  <span class="fmt19">\\</span> </pre>
+<pre> The majority of users are on <span class="fmt40">mobile.</span> </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Consists</span><span class="fmt57"> </span><span class="fmt57">of</span>} </pre>
+<pre>Media Type: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> optional </pre>
+<pre>	<span class="fmt19">\item</span> can only have one value / can't try to have multiple media declarations = although can use 'all' </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> can be: </pre>
+<pre>	<span class="fmt19">\subitem</span> All </pre>
+<pre>	<span class="fmt19">\subitem</span> screen </pre>
+<pre>	<span class="fmt19">\subitem</span> print - how things appear when it is printed out. </pre>
+<pre>	<span class="fmt19">\subitem</span> Speech </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre>Media Feature / Expression: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> can have as many <span class="fmt39">as</span> required. </pre>
+<pre>	<span class="fmt19">\item</span> Default value = 'screen' </pre>
+<pre>	<span class="fmt19">\item</span> Values excepted </pre>
+<pre>	<span class="fmt19">\subitem</span> min-width  </pre>
+<pre>	<span class="fmt19">\subitem</span> max-width </pre>
+<pre>	<span class="fmt19">\subitem</span> and more... </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">&lt;!--</span><span class="fmt24"> </span><span class="fmt24">this</span><span class="fmt24"> </span><span class="fmt24">doesn't</span><span class="fmt24"> </span><span class="fmt24">work</span><span class="fmt24"> </span><span class="fmt24">-</span><span class="fmt24"> </span><span class="fmt24">you</span><span class="fmt24"> </span><span class="fmt24">can't</span><span class="fmt24"> </span><span class="fmt24">have</span><span class="fmt24"> </span><span class="fmt24">multiple</span><span class="fmt24"> </span><span class="fmt24">media</span><span class="fmt24"> </span><span class="fmt24">types</span><span class="fmt24"> </span><span class="fmt24">--></span> </pre>
+<pre><span class="fmt24">&lt;link</span><span class="fmt24"> </span><span class="fmt24">rel="stylesheet"</span><span class="fmt24"> </span><span class="fmt24">href="multiple.css"</span><span class="fmt24"> </span><span class="fmt24">media="screen</span><span class="fmt24"> </span><span class="fmt24">and</span><span class="fmt24"> </span><span class="fmt24">print"</span><span class="fmt24"> </span><span class="fmt24">></span> </pre>
+<pre> </pre>
+<pre><span class="fmt24">&lt;!--</span><span class="fmt24"> </span><span class="fmt24">this</span><span class="fmt24"> </span><span class="fmt24">does</span><span class="fmt24"> </span><span class="fmt24">work</span><span class="fmt24"> </span><span class="fmt24">--></span> </pre>
+<pre><span class="fmt24">&lt;link</span><span class="fmt24"> </span><span class="fmt24">rel="stylesheet"</span><span class="fmt24"> </span><span class="fmt24">href="multiple.css"</span><span class="fmt24"> </span><span class="fmt24">media="all"></span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Use</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> min-width </pre>
+<pre>	<span class="fmt19">\item</span> max-width </pre>
+<pre>	<span class="fmt19">\item</span> min-height </pre>
+<pre>	<span class="fmt19">\item</span> max-height </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">DON'T</span><span class="fmt57"> </span><span class="fmt57">Use</span>} </pre>
+<pre>The following can have some issues - DON'T use them!  Everything can be achieved with the parameters above. </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> min-device-width </pre>
+<pre>	<span class="fmt19">\item</span> max-device-width </pre>
+<pre>	<span class="fmt19">\item</span> min-device-height </pre>
+<pre>	<span class="fmt19">\item</span> max-device-height </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">min-width</span>} </pre>
+<pre>Apply this CSS from <span class="fmt39">this</span> width <span class="fmt38">onwards</span>. </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">&lt;link</span><span class="fmt24"> </span><span class="fmt24">rel="stylesheet"</span><span class="fmt24"> </span><span class="fmt24">href="mq_900-plus.css"</span><span class="fmt24"> </span><span class="fmt24">media="(min-width:</span><span class="fmt24"> </span><span class="fmt24">900px)"></span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>surround parameters with parenthesis.  </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsubsection</span>{<span class="fmt57">Example</span>} </pre>
+<pre>If we want the navigation horizontally along the top of <span class="fmt39">the</span> page, set that element to a width of 100<span class="fmt19">\%</span> with the flex container being 'row wrap'.   </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>When the page width increases and we want the navigation to be on the left-hand side, use a min-width media query so that above a certain fresh-hold, this width of the items will change.  For example, 15<span class="fmt19">\%</span> and 85<span class="fmt19">\%</span> so they will appear in a row next to each other, occupying one full row across the page. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Buzz-words</span>} </pre>
+<pre>Responsive Design<span class="fmt19">\\</span> </pre>
+<pre> - Your web page responds to the size of <span class="fmt39">the</span> <span class="fmt38">viewport</span><span class="fmt19">\\</span> </pre>
+<pre> <span class="fmt19">\\</span> </pre>
+<pre>Mobile First<span class="fmt19">\\</span> </pre>
+<pre> - Build your pages to look good on <span class="fmt40">mobile</span> first<span class="fmt19">\\</span> </pre>
+<pre> - Then add in break-points so that your pages work at larger resolutions<span class="fmt19">\\</span> </pre>
+<pre> <span class="fmt19">\\</span> </pre>
+<pre>Breakpoints based upon content<span class="fmt19">\\</span> </pre>
+<pre> - Create your <span class="fmt40">breakpoints</span> based upon your <span class="fmt40">content</span><span class="fmt19">\\</span> </pre>
+<pre> - Have your <span class="fmt40">content</span> look good, and be readable, at different sizes<span class="fmt19">\\</span> </pre>
+<pre> <span class="fmt19">\\</span> </pre>
+<pre>70 - 80 characters of text per line<span class="fmt19">\\</span> </pre>
+<pre> - Classic readability theory suggests that an ideal column should contain 70 to 80 characters per line (about 8 to 10 words in English)<span class="fmt19">\\</span> </pre>
+<pre> - When the width of a text block grows past about 10 words, a <span class="fmt38">breakpoint</span> should be considered<span class="fmt19">\\</span> </pre>
+<pre>  </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Google's</span><span class="fmt57"> </span><span class="fmt57"><span class="fmt38">Flexbox</span></span><span class="fmt57"> </span><span class="fmt57">Design</span><span class="fmt57"> </span><span class="fmt57">Patterns</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Main</span><span class="fmt57"> </span><span class="fmt57">take-</span><span class="fmt57"><span class="fmt38">aways</span></span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Build mobile first  </pre>
+<pre>	<span class="fmt19">\item</span> Use:  </pre>
+<pre>	<span class="fmt19">\subitem</span> display: flex;  </pre>
+<pre>	<span class="fmt19">\subitem</span> flex-flow: row wrap;  </pre>
+<pre>	<span class="fmt19">\item</span> Each row:  </pre>
+<pre>	<span class="fmt19">\subitem</span> What you want on each row adds up to 100<span class="fmt18">%</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Useful</span><span class="fmt57"> </span><span class="fmt57">links</span>} </pre>
+<pre> - <span class="fmt38">https</span>://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns </pre>
+<pre>  </pre>
+<pre> <span class="fmt20">\subsubsection</span>{<span class="fmt57">Recommended</span><span class="fmt57"> </span><span class="fmt57">layout</span>} </pre>
+<pre> A few '<span class="fmt38">div's</span> with the central one being a flex container.  <span class="fmt38">Divs</span> will span the full width and can adjust the width ratios of the elements inside <span class="fmt39">the</span> flex container at break points. </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">Position</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Position</span>} </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Overview</span>} </pre>
+<pre>The position CSS property is good for positioning elements. A positioned element is an <span class="fmt39">element</span> whose computed position property is either relative, absolute, fixed or sticky.  </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Fixed</span>} </pre>
+<pre>No space reserved for the element - it is taken out of the  document flow (i.e. not block level where it takes up the entire row, nor it is an inline element where it takes up as little horizontal space as possible and stack with other elements along the same row) </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>A fixed position element is positioned relative to the view-port (at a fixed position <span class="fmt40">relative</span> to the <span class="fmt40">view-port</span>), or the browser window itself.  </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>Since the element is positioned relative to the view-port, and the <span class="fmt40">view-port</span> does not change when the page is scrolled, the element will remain in the same position/stay where it is. </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>This <span class="fmt39">is</span> useful/can be used for: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Menus </pre>
+<pre>	<span class="fmt19">\item</span> Navigation </pre>
+<pre>	<span class="fmt19">\item</span> Cookie alerts... </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Relative</span>} </pre>
+<pre>Positioned <span class="fmt19">\bf</span>{relative} to itself. </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>The position is computed relative to where it should be (to itself).  Where the element <span class="fmt40">should</span> be is still blocked out in the <span class="fmt38">DOM</span>. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Absolute</span>} </pre>
+<pre>An <span class="fmt19">\it</span>{absolute} positioned element is removed from the <span class="fmt38">DOM</span> and has it's position computed from relative to the next element up in the <span class="fmt38">DOM</span> (tree) which also has the position property set.  If there are non, the element is positioned in the normal document flow. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Static</span>} </pre>
+<pre>Normal behavior - positioned within the document flow as per usual. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Accepted</span><span class="fmt57"> </span><span class="fmt57">properties</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Top </pre>
+<pre>	<span class="fmt19">\subitem</span> \&lt;length\> </pre>
+<pre>	<span class="fmt19">\subitem</span> percentage	 </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> Right </pre>
+<pre>	<span class="fmt19">\subitem</span> \&lt;length\> </pre>
+<pre>	<span class="fmt19">\subitem</span> percentage </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> Bottom </pre>
+<pre>	<span class="fmt19">\subitem</span> \&lt;length\> </pre>
+<pre>	<span class="fmt19">\subitem</span> percentage </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> Left	 </pre>
+<pre>	<span class="fmt19">\subitem</span> \&lt;length\> </pre>
+<pre>	<span class="fmt19">\subitem</span> percentage </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">Float</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Float</span>} </pre>
+<pre>Old approach - use <span class="fmt38">Flexbox</span> instead. (Its a very hack-y way of positioning things on the page) </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre><span class="fmt39">The</span> float CSS property takes the element out of the normal <span class="fmt38">DOM</span> and aligns it to the left or right relative to its <span class="fmt19">\bf</span>{container}. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Other text or inline elements then position and wrap around this object. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>(Needs to be added in HTML before the elements that wrap around it are in the HTML) </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Overflow</span>} </pre>
+<pre>With overflow not set, the element's container does not take into consideration that element when it comes to sizing - it will only use the other elements which does not have the <span class="fmt19">\it</span>{float} property set for calculating it's size. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>So if the element with <span class="fmt39">the</span> float set is too large, it will not fit inside it's container (since it has been taken out of the <span class="fmt38">DOM</span>). </pre>
+<pre><span class="fmt19">\\\\</span> </pre>
+<pre>The solution to this it <span class="fmt39">to</span> set the <span class="fmt19">\it</span>{overflow} CSS property on the container element.  </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> auto </pre>
+<pre>	<span class="fmt19">\subitem</span> will set it's size to accommodate/fit all of the child elements, with float set, inside it. </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt19"><span class="fmt57">\it</span></span><span class="fmt57">{</span><span class="fmt57"><span class="fmt57">clear</span></span><span class="fmt57">}</span>} </pre>
+<pre>When the <span class="fmt19">\it</span>{clear} CSS property is set to an element, that <span class="fmt39">element</span> will ensure that it respects where elements with <span class="fmt19">\it</span>{float} set are - i.e. the element will not be positioned under an <span class="fmt40">element</span> with <span class="fmt19">\it</span>{float}.   </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\it</span>{clear} has the following possible values: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> both  </pre>
+<pre>	<span class="fmt19">\subitem</span> will not be positioned under elements with <span class="fmt19">\it</span>{float set} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">Background</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Background</span>} </pre>
+<pre><span class="fmt19">\it</span>{background} is a CSS shorthand property that is not recommended to be used - just causes confusion (little uniformity of implementation). (Be clear, not clever). </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>It also sets other default values to other unset properties (relating to background) which could alter the expected outcome. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">background-color</span>} </pre>
+<pre>Sets the background color of the element. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">background-image</span>} </pre>
+<pre>Sets an image as the background of an element. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">background-repeat</span>} </pre>
+<pre>Refers to background-image property <span class="fmt39">to</span> define how the <span class="fmt19">\it</span>{background-image} is repeated. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Has the possible values: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> Row  </pre>
+<pre>	<span class="fmt19">\subitem</span> Repeats the background image along the x-axis </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> Column </pre>
+<pre>	<span class="fmt19">\subitem</span> Repeats the background image along the <span class="fmt40">column</span> axis only </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> Both </pre>
+<pre>	<span class="fmt19">\subitem</span> Repeats the background image along the x <span class="fmt19">\bf</span>{and} y axis. </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">background-size</span>} </pre>
+<pre>The <span class="fmt19">\it</span>{background-size} specifies <span class="fmt39">the</span> size of <span class="fmt39">the</span> <span class="fmt19">\it</span>{background-image} if set.  </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Does <span class="fmt19">\bf</span>{NOT} <span class="fmt39">set</span> the size of <span class="fmt39">the</span> background since this size is determined by the size of <span class="fmt39">the</span> element.  </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Can take the values: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> length </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> percentage  </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> auto </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> contain </pre>
+<pre>	<span class="fmt19">\subitem</span> sized so this it is <span class="fmt19">\it</span>{contained} within the element it is the background of  </pre>
+<pre>	<span class="fmt19">\subitem</span> will scale with the source ratio maintained. </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> cover </pre>
+<pre>	<span class="fmt19">\subitem</span> The background image will be sized so that <span class="fmt19">\it</span>{covers} the element it is the background of. </pre>
+<pre>	<span class="fmt19">\subitem</span> Will scale so that the source ratio maintained. </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">background-position</span>} </pre>
+<pre>Refers to the background image. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\it</span>{background-position} is a CSS property that sets the position of <span class="fmt39">the</span> background image relative to the element it is the <span class="fmt40">background</span> of. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">background-origin</span>} </pre>
+<pre>Refers to the background image. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre><span class="fmt19">\it</span>{background-origin} is a CSS property that determines where the <span class="fmt40">background</span> image starts and ends. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Can take the values of: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt19">\it</span>{content-box} </pre>
+<pre>	<span class="fmt19">\subitem</span> Sets the start and end to align with the content-box of <span class="fmt39">the</span> element. </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt19">\it</span>{padding-box} </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> <span class="fmt19">\it</span>{border-box} </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">background-attachment</span>} </pre>
+<pre>Refers to the background-image. </pre>
+<pre><span class="fmt19">\\</span> </pre>
+<pre>Can take the values of: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> scroll (default) </pre>
+<pre>	<span class="fmt19">\subitem</span> the background image scrolls with the page/element </pre>
+<pre>	 </pre>
+<pre>	<span class="fmt19">\item</span> fixed </pre>
+<pre>	<span class="fmt19">\subitem</span> Stays in the same place in the <span class="fmt38">viewport</span>  </pre>
+<pre>	<span class="fmt19">\subitem</span> <span class="fmt39">the</span> background image does not scroll so stays fixed in the <span class="fmt40">background</span> as <span class="fmt39">the</span> remaining page elements scrolls over it.  </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">background-clip</span>} </pre>
+<pre>Extends to both background-image and background-color. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">HTML</span><span class="fmt57"> </span><span class="fmt57">Entities</span>} </pre>
+<pre>To use stuff like &lt;, use HTML entities: </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&amp;#60</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&amp;lt</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Non-breaking</span><span class="fmt57"> </span><span class="fmt57">space</span><span class="fmt57"> </span><span class="fmt57">(</span><span class="fmt19"><span class="fmt57"><span class="fmt38">\&amp;</span></span></span><span class="fmt57"><span class="fmt38">nbsp</span></span><span class="fmt57">;)</span>} </pre>
+<pre>Use  </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">	</span><span class="fmt24">&amp;nbsp;</span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre>to force the text not to be put onto more than one line at that space. </pre>
+<pre> </pre>
+<pre><span class="fmt18">%%%%%%%%%%%%%%%%%%%%%</span><span class="fmt18"> </span><span class="fmt18">Forms</span><span class="fmt18"> </span><span class="fmt18">%%%%%%%%%%%%%%%%%%%%%%</span> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Forms</span>} </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt24">&lt;input</span><span class="fmt24"> </span><span class="fmt24">type="text"</span><span class="fmt24"> </span><span class="fmt24">id="fname"</span><span class="fmt24"> </span><span class="fmt24">name="first-name"></span> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">lstlisting</span></span><span class="fmt20">}</span> </pre>
+<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre>	<span class="fmt19">\item</span> 'id' is what <span class="fmt39">is</span> used on the website, e.g. for targeting that specific element with CSS or JavaScript. </pre>
+<pre>	<span class="fmt19">\item</span> 'name' is the <span class="fmt39">name</span> that is given to the variable that contains the data from that element which is sent off to the server. </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">itemize</span></span><span class="fmt20">}</span> </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\section</span>{<span class="fmt57">Random</span><span class="fmt57"> </span><span class="fmt57">Bits</span>} </pre>
+<pre>At the start of <span class="fmt39">the</span> semester, ask students to <span class="fmt39">ask</span> two people their names.  Then, start by doing a quiz and ask what those two people's names were.  Should get a funny response and more importantly demonstrate that the brain is bad at remembering things and effort is needed to succeed. </pre>
+<pre> </pre>
+<pre><span class="fmt20">\paragraph</span>{<span class="fmt57">Average</span><span class="fmt57"> </span><span class="fmt57">page</span><span class="fmt57"> </span><span class="fmt57">size</span>} is 2.4mb  </pre>
+<pre> </pre>
+<pre><span class="fmt20">\subsection</span>{<span class="fmt57">Avoid</span><span class="fmt57"> </span><span class="fmt57">random</span><span class="fmt57"> </span><span class="fmt57">overrides</span><span class="fmt57"> </span><span class="fmt57">in</span><span class="fmt57"> </span><span class="fmt57">CSS</span>} </pre>
+<pre>Set an id to the body tag, then when referring to another element on the same page, can then use a descendant (that element is a <span class="fmt40">descendant</span> of body). So when  you add additional things in, you don't get unintentional overrides. </pre>
+<pre> </pre>
+<pre> </pre>
+<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt49">document</span></span><span class="fmt20">}</span> </pre></body></html>

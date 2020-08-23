@@ -26,6 +26,6 @@ func writeDataToFile(f *os.File, data string){
 }
 
 func writeToTCPConnection(con *net.TCPConn, data string) {
-	con.Write([]byte(data ))
+	con.Write([]byte(data))
 }
 

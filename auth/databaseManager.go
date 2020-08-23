@@ -20,7 +20,7 @@ func openDatabaseCon() (*sql.DB, error) {
 	}
 
 	if err = db.Ping(); err != nil {
-		panic(err)
+		log.Fatal(err)
 		return nil, err
 	}
 	fmt.Println("Database ping successful")

@@ -9,8 +9,7 @@ import (
 	"strconv"
 )
 
-func main() {
-
+func run() {
 	errCounter := 0
 	complete := false
 	for i := 0; !complete; i++ {
@@ -21,7 +20,18 @@ func main() {
 			}
 		}
 	}
+}
 
+func main() {
+
+	//run()
+	//url := "https://www.biorxiv.org/content/10.1101/703801v4.full.pdf"
+	url := "https://www.thelancet.com/action/showPdf?pii=S2589-5370%2820%2930228-5"
+	saveFilePath := "/covid-19/cerebral_micro-structure_changes_3_month_follow-up_60-patients.pdf"
+	err := downloadFile(url, saveFilePath)
+	if err != nil {
+		fmt.Printf("Error downloading file: %v\n", err)
+	}
 
 }
 

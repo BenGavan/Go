@@ -21,6 +21,46 @@ type User struct {
 }
 
 func main() {
+	myDateString := "2000-01-08 16:30"
+	fmt.Println("My Starting Date:\t", myDateString)
+
+	// Parse the date string into Go's time object
+	// The 1st param specifies the format, 2nd is our date string
+	myDate, err := time.Parse("2006-01-02 15:04", myDateString)
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Printf("Data: %v\n", myDate)
+	unix := myDate.UTC().Unix()
+	fmt.Printf("Unix: %v\n", unix)
+
+	fmt.Printf("Time now: %v\n", time.Now().UTC().Unix())
+	fmt.Printf("Time now: %v\n", time.Now().UTC().UnixNano())
+}
+
+func writeColumnsToFileTest() {
+	a1 := make([]float64, 3)
+	a1[0] = 11
+	a1[1] = 12
+	a1[2] = 13
+
+	a2 := make([]float64, 3)
+	a2[0] = 21
+	a2[1] = 22
+	a2[2] = 23
+
+	a3 := make([]float64, 3)
+	a3[0] = 31
+	a3[1] = 32
+	a3[2] = 33
+
+	path := "testcol.txt"
+
+	writeColumnsToFile(path, a1, a2, a3)
+}
+
+func run() {
 	timeTest()
 	//deleteFile("test.txt")
 	//testFilePath := "testing.txt"
@@ -32,7 +72,6 @@ func main() {
 	fs := http.FileServer(http.Dir("static/"))
 	mux.Handle("/static", http.FileServer(http.Dir("/static/")))
 	mux.Handle("/static/", http.StripPrefix("/static/", fs))
-
 
 	mux.Handle("/favicon.ico", http.NotFoundHandler())
 
@@ -63,10 +102,16 @@ func main() {
 	}
 }
 
+func multipleParameters(arrs ...[]float64) {
+	fmt.Println(arrs)
+	for i := 0; i < len(arrs); i++ {
+		fmt.Println(arrs[i])
+	}
+}
+
 //func registerRoutes(mux *http.ServeMux) {
 //	mux.Handle()
 //}
-
 
 func handleBase(w http.ResponseWriter, r *http.Request) {
 	printInfo(r)
@@ -92,13 +137,24 @@ func sayHello(w http.ResponseWriter, r *http.Request) {
 }
 
 /*
+append
+ */
+func appendExamples() {
+	var ts []byte
+	var exs []byte
+	ts = append(ts, exs...)
+	ts = append(ts, 1, 3, 3)
+	ts = append(ts, "string"...)
+}
+
+/*
 ////////////////   ------ chan / async ------   ////////////////
 */
 func asyncCheck(testString string, out chan bool) {
 	out <- true
 }
 
-func asynValue(out chan int) {
+func asyncValue(out chan int) {
 	out <- 123
 }
 
@@ -137,7 +193,7 @@ func asyncTesting() (bool, int, string) {
 	cStringValue := make(chan string)
 
 	go asyncCheck("test", c)
-	go asynValue(cValue)
+	go asyncValue(cValue)
 	go asyncString("This is the hard coded parameter string.", cStringValue)
 
 	asyncCheckResult := <-c
@@ -167,6 +223,7 @@ func handleUnsafeTemplate(w http.ResponseWriter, r *http.Request) {
 func handleSafeTemplate(w http.ResponseWriter, r *http.Request) {
 	// The same as unsafe template; however, we are using temple from the HTML package (html/template)
 	t, err := template.New("foo").Parse(`{{define "T"}}Hello, {{.}}!{{end}}`)
+	handleError(err)
 	err = t.ExecuteTemplate(w, "T", "<script>alert('you have been pwned')</script>;")
 	handleError(err)
 }
@@ -192,11 +249,11 @@ func createFile(path string) {
 	}
 
 	file, err := os.Create(path)
-	defer file.Close()
 	if err != nil {
 		fmt.Println("file has not been created")
 		return
 	}
+	defer file.Close()
 	fmt.Println("file created")
 }
 
@@ -223,6 +280,22 @@ func writeFile(path string) {
 	fmt.Println("File successfully uploaded")
 }
 
+func writeColumnsToFile(path string, cols ...[]float64) {
+	if !isArraysOfEqualLength(cols) {
+		fmt.Println("ERROR: Arrays not of equal length")
+		return
+	}
+	var outString string
+	for i := 0; i < len(cols[0]); i++ {
+		for j := range cols {
+			outString += fmt.Sprint(cols[j][i], "\t")
+		}
+		outString += "\n"
+	}
+	outBytes := []byte(outString)
+	writeToFile(path, outBytes)
+}
+
 func writeToFile(path string, bytes []byte) {
 	//fmt.Println("path:", path, "bytes:", bytes)
 	createFile(path)
@@ -246,6 +319,23 @@ func writeToFile(path string, bytes []byte) {
 	}
 
 	fmt.Println("File successfully uploaded")
+}
+
+func readBytesFromFile(filepath string) ([]byte, error) {
+	file, err := os.OpenFile(filepath, os.O_RDWR, 0644)
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
+
+	var buf bytes.Buffer
+
+	_, err = io.Copy(&buf, file)
+	if err != nil {
+		return nil, err
+	}
+
+	return buf.Bytes(), err
 }
 
 func readFile(path string) {
@@ -556,8 +646,17 @@ func printX() {
 	}
 }
 
-func handleError(err error) {
-	if err != nil {
-		log.Error(err)
+//func handleError(err error) {
+//	if err != nil {
+//		log.Error(err)
+//	}
+//}
+
+func isArraysOfEqualLength(arrays [][]float64) bool {
+	for i := 0; i < len(arrays)-1; i++ {
+		if len(arrays[i]) != len(arrays[i+1]) {
+			return false
+		}
 	}
+	return true
 }

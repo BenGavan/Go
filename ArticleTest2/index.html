@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+{{/*<div class="LaTeX">*/}}
+{{/*    \documentclass[12pt]{article}*/}}
+
+{{/*    \begin{document}*/}}
+
+{{/*    \title{LaTeXML Example}*/}}
+{{/*    \maketitle*/}}
+
+{{/*    \begin{abstract}*/}}
+{{/*    This is a sample LaTeXML document.*/}}
+{{/*    \end{abstract}*/}}
+
+{{/*    \section{First Section}*/}}
+
+{{/*    $$ \sum_{n=1}^{+\infty} \frac{1}{n^2} = \frac{\pi^2}{6} $$*/}}
+
+{{/*    \end{document}*/}}
+{{/*</div>*/}}
+
+<div class="LaTeX">
+    $$ \sum_{n=1}^{+\infty} \frac{1}{n^2} = \frac{\pi^2}{6} $$
+    \begin{equation}
+        x^2
+    \end{equation}
+</div>
+
+<h1>{{ .Title }}</h1>
+
+{{ .Article }}
+
+</body>
+</html>
