@@ -39,6 +39,10 @@ func (s *server) handleHome() http.HandlerFunc {
 		tmplt    *template.Template
 		tmpltErr error
 	)
+
+	type Page struct {
+
+	}
 	return func(w http.ResponseWriter, r *http.Request) {
 		s.printInfo(w, r)
 		init.Do(func() {
@@ -57,10 +61,34 @@ func (s *server) handleHome() http.HandlerFunc {
 	}
 }
 
+func (s *server) handlePhysics() http.HandlerFunc {
+	var (
+		init sync.Once
+		tmplt *template.Template
+		templateErr error
+	)
+	return func(w http.ResponseWriter, r *http.Request) {
+		s.printInfo(w, r)
+		init.Do(func() {
+			tmplt, templateErr = template.ParseFiles("src/physics.html")
+		})
+		if templateErr != nil {
+			http.Error(w, templateErr.Error(), http.StatusInternalServerError)
+			return
+		}
+
+		err := tmplt.Execute(w, nil)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+	}
+}
+
 func run() error {
 	s := newServer()
 	httpServer := &http.Server{
-		Addr:    ":8080",
+		Addr:    ":80",
 		Handler: s.router,
 	}
 	err := httpServer.ListenAndServe()
@@ -69,4 +97,8 @@ func run() error {
 
 func main() {
 	fmt.Println("Hey")
+	err := run()
+	if err != nil {
+		panic(err)
+	}
 }

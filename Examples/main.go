@@ -21,6 +21,22 @@ type User struct {
 }
 
 func main() {
+	//bitShiftExamples()
+	deleteTextInConsole()
+}
+
+/*
+Console stuff
+ */
+func deleteTextInConsole() {
+	fmt.Printf("Test")
+	fmt.Print("\b")
+}
+
+/*
+Date Stuff
+ */
+func dateStringConversionExamples() {
 	myDateString := "2000-01-08 16:30"
 	fmt.Println("My Starting Date:\t", myDateString)
 
@@ -145,6 +161,16 @@ func appendExamples() {
 	ts = append(ts, exs...)
 	ts = append(ts, 1, 3, 3)
 	ts = append(ts, "string"...)
+}
+
+/*
+Bit shifts
+ */
+func bitShiftExamples() {
+	fmt.Printf("1 << 0 = %v\n", 1 << 0)
+	fmt.Printf("1 << 1 = %v\n", 1 << 1)
+	fmt.Printf("1 << 2 = %v\n", 1 << 2)
+	fmt.Printf("1 << 3 = %v\n", 1 << 3)
 }
 
 /*

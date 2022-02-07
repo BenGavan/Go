@@ -12,7 +12,7 @@ import (
 func run() {
 	errCounter := 0
 	complete := false
-	for i := 0; !complete; i++ {
+	for i := 2; !complete; i++ {
 		if getAndSaveFile(i) {
 			errCounter += 1
 			if errCounter > 2 {
@@ -24,14 +24,16 @@ func run() {
 
 func main() {
 
-	//run()
+	run()
 	//url := "https://www.biorxiv.org/content/10.1101/703801v4.full.pdf"
-	url := "https://www.thelancet.com/action/showPdf?pii=S2589-5370%2820%2930228-5"
-	saveFilePath := "/covid-19/cerebral_micro-structure_changes_3_month_follow-up_60-patients.pdf"
-	err := downloadFile(url, saveFilePath)
-	if err != nil {
-		fmt.Printf("Error downloading file: %v\n", err)
-	}
+	//url := "https://www.thelancet.com/action/showPdf?pii=S2589-5370%2820%2930228-5"
+	//url := ""
+	////saveFilePath := "/covid-19/cerebral_micro-structure_changes_3_month_follow-up_60-patients.pdf"
+	//saveFilePath := ""
+	//err := downloadFile(url, saveFilePath)
+	//if err != nil {
+	//	fmt.Printf("Error downloading file: %v\n", err)
+	//}
 
 }
 
@@ -41,13 +43,17 @@ func getAndSaveFile(i int) bool {
 	//	numberString = "0" + strconv.Itoa(i)
 	//}
 	//filePath := "MIT-8_05-QM-II-" + numberString + ".pdf"
-	filePath := "MATH10111-Exercise-Solutions-" + numberString + ".pdf"
+	//filePath := "MATH10111-Exercise-Solutions-" + numberString + ".pdf"
+	filePath := "GR/HW" + numberString + "Qsolutions.pdf"
+
+	fileUrl := "https://inside.mines.edu/~aflourno/GR/HW" + numberString + "Qsolutions.pdf"
+	//"https://inside.mines.edu/~aflourno/GR/HW2Q.pdf"
 
 	//fileUrl := "https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-spring-2013/lecture-notes/MIT8_04S13_Lec" + numberString + ".pdf"
 	//fileUrl := "https://ocw.mit.edu/courses/physics/8-05-quantum-physics-ii-fall-2013/lecture-notes/MIT8_05F13_Chap_" + numberString + ".pdf"
 
 	//fileUrl := "https://personalpages.manchester.ac.uk/staff/marianne.johnson/lecture" + numberString + "(2019)nopause.pdf"
-	fileUrl := "https://personalpages.manchester.ac.uk/staff/marianne.johnson/ExSol" + numberString + ".pdf"
+	//fileUrl := "https://personalpages.manchester.ac.uk/staff/marianne.johnson/ExSol" + numberString + ".pdf"
 
 
 	err := downloadFile(fileUrl, filePath)

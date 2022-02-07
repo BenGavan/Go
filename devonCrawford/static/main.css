@@ -39,7 +39,7 @@ header {
     padding-right: 20px;
 }
 
-a {
+header a, footer a {
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -75,7 +75,7 @@ header > nav > div {
     justify-content: space-between;
     align-items: center;
 
-    background-image: url("images/home.jpg");
+    background-image: url("images/home_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -113,7 +113,7 @@ header > nav > div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid hotpink;
+    /*border: 1px solid hotpink;*/
     margin-bottom: 10px;
 }
 
@@ -124,7 +124,7 @@ header > nav > div {
 #atf-more-arrows {
     width: 50px;
     height: 50px;
-    background-color: white;
+    /*background-color: white;*/
 }
 
 /* My Work */
@@ -132,7 +132,7 @@ section#my-work {
     color: white;
     background-color: #191919;
 
-    padding: 50px;
+    padding: 100px;
 }
 
 h2 {
@@ -158,7 +158,7 @@ h3 {
     font-size: 22px;
 }
 
-ol {
+ol, ul {
     list-style-type: square;
     list-style-position: inside;
     padding: 10px 20px;
@@ -170,22 +170,34 @@ ol li {
     padding-bottom: 5px;
 }
 
-/* Projects */
-section#projects {
-    padding: 50px;
-}
-
-section#projects p {
-    padding-top: 40px;
-}
-
-#project-details {
+/* Areas of Interests */
+.area_of_interest {
+    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 50px;
 }
 
-#project-details > div {
-    padding-bottom: 50px;
+.area_of_interest h2 {
+    font-size: 20px;
+    font-weight: bold;
 }
+
+.area_of_interest p {
+    padding-top: 10px;
+}
+
+.area_of_interest ul {
+    list-style: square;
+}
+
+.area_of_interest li {
+    padding-bottom: 2px;
+}
+
+#computing {
+    padding-bottom: 100px;
+}
+
 
 /* Footer */
 footer {
@@ -224,6 +236,37 @@ footer nav div {
     justify-content: center;
     align-items: center;
     color: #535353;
+}
+
+
+/* Arrow Utils */
+.arrow {
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 

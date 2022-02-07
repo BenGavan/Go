@@ -1,0 +1,31 @@
+From: http://cryto.net/~joepie91/blog/2016/06/13/stop-using-jwt-for-sessions/
+
+what is JWT good for, then?
+At the start of this article, I said that there are good usecases for JWT, but that they're just not suitable as a
+session mechanism. This still holds true; the usecases where JWT is particularly effective are typically usecases where
+they are used as a single-use authorization token.
+
+From the JSON Web Token specification:
+
+JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. [...]
+enabling the claims to be digitally signed or integrity protected with a Message Authentication Code (MAC) and/or encrypted.
+
+In this context, "claim" can be something like a 'command', a one-time authorization, or basically any other scenario
+that you can word as:
+
+Hello Server B, Server A told me that I could <claim goes here>, and here's the (cryptographic) proof.
+
+For example, you might run a file-hosting service where the user has to authenticate to download their files, but the
+files themselves are served by a separate, stateless "download server". In this case, you might want to have your
+application server (Server A) issue single-use "download tokens", that the client can then use to download the file from
+ a download server (Server B).
+
+When using JWT in this manner, there are a few specific properties:
+
+The tokens are short-lived. They only need to be valid for a few minutes, to allow a client to initiate the download.
+The token is only expected to be used once. The application server would issue a new token for every download, so any
+one token is just used to request a file once, and then thrown away. There's no persistent state, at all.
+The application server still uses sessions. It's just the download server that uses tokens to authorize individual
+downloads, because it doesn't need persistent state.
+As you can see here, it's completely reasonable to combine sessions and JWT tokens - they each have their own purpose,
+and sometimes you need both. Just don't use JWT for persistent, long-lived data.

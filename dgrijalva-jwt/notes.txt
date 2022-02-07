@@ -1,0 +1,37 @@
+1. When log in, send 2 tokens ()
+
+
+
+Security:
+ - use HttpOnly for cookies storing sensitive information (prevents client side script accessing the protected cookie)
+ - Refresh tokens should be hashed in database (like a password)
+ - Message Authentication Code (MAC)
+
+Cookie Storage:
+ - HttpOnly (No scripts can access it)
+ - SameSite = strict (No cross-origin  cookie sharing)
+ - secure (SSl only)
+
+
+Sources:
+ - JWT standard document
+   - https://datatracker.ietf.org/doc/html/rfc7519
+ - Article on Refresh Tokens
+   - https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/
+ - Article on session management
+   - (part 1) https://supertokens.io/blog/all-you-need-to-know-about-user-session-security
+   - (part 2) https://supertokens.io/blog/the-best-way-to-securely-manage-user-sessions
+ - Backend Masterclass
+   - https://www.youtube.com/playlist?list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE
+
+
+Alternatives:
+ - paseto
+
+
+
+Other tools:
+  - DB design:
+    - https://dbdiagram.io/d
+
+

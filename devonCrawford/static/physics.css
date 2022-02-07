@@ -1,0 +1,96 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 50px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    color: black;
+    background-color: white;
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+
+/* Areas of Interests */
+section {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+
+    border-color: pink;
+    border-width: 2px;
+}
+
+section h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section p {
+    padding-top: 10px;
+}
+
+section ul {
+    list-style: square;
+}
+
+section li {
+    padding-bottom: 2px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #363636;
+    color: white;
+}
+
+footer > #stay-connected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+}
+
+footer #footer-icons {
+    width: 70vw;
+    height: 50px;
+
+    margin-top: 50px;
+
+    background-color: white;
+}
+
+footer #footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #232323;
+}
+
+
+footer nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #535353;
+}

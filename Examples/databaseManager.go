@@ -12,7 +12,7 @@ type User2 struct {
 	username string
 }
 
-func main() {
+func mainDatabase() {
 	//connStr := "user=postgres dbname=sample_db sslmode=disable"
 	connStr := "postgres://postgres:password@localhost/sample_db?sslmode=disable"
 
